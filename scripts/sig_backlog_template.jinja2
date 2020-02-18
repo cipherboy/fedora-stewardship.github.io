@@ -1,0 +1,25 @@
+---
+title:      Backlog
+layout:     page
+permalink:  /backlog/
+---
+
+{{ package_ods }} of {{ package_num }} out of date ({{ package_od_percent }})
+
+{% for package in packages.values() %}
+{% if package.update_backlog.values() %}
+{% if package.sig_package %}
+
+## {{ package.name }}
+- Last release: {{ package.last_version }}
+- Last updated: {{ package.last_updated }}
+
+### Update backlog:
+
+{% for version, delay in package.update_backlog.items() %}
+- {{ version }} ({{ delay }} days ago)
+{%- endfor -%}
+
+{%- endif -%}
+{%- endif -%}
+{%- endfor -%}

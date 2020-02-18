@@ -1,0 +1,132 @@
+---
+title:      Report
+layout:     page
+permalink:  /report/
+---
+
+<p>
+    rawhide compose: {{ compose }}; Rendered last at: {{ current_date }}
+</p>
+
+<h2 id="members">
+    Current members ({{ num_members }})
+</h2>
+
+<ul>
+    {% for member in members %}
+        <li>{{ member }}</li>
+    {% endfor %}
+</ul>
+
+<h2 id="maintained-packages">
+    Maintained packages ({{ num_maintained }})
+</h2>
+
+{{ table }}
+
+<h2 id="total-leaves">
+    Total leaf Packages (double check this)
+</h2>
+
+{% if leaves %}
+    <ul>
+        {% for package in leaves %}
+            <li>{{ package }}</li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>
+        <em>
+            None
+        </em>
+    </p>
+{% endif %}
+
+<h2 id="sig-leaves">
+    SIG leaf Packages (up to {{ levels }} down the dependency graph)
+</h2>
+
+<p>
+    Only packages up to {{ levels }} down the dependency graph are considered
+    to make running the report possible within a few hours, not a few <em>days</em>.
+</p>
+
+{% if sig_leaves %}
+    <ul>
+        {% for package in sig_leaves %}
+            <li>{{ package }}</li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>
+        <em>
+            None
+        </em>
+    </p>
+{% endif %}
+
+<h2 id="package-dependencies">
+    Package dependencies
+</h2>
+
+{% for name, package in depinfo.items() %}
+
+    <h3 id="{{name}}-deps">
+        {{ name }}
+    </h3>
+
+    {% if package.depended %}
+        <p>
+            Depended on:
+        </p>
+
+        {% for dep in package.depended %}
+
+            <h4>
+                {{ dep.pkgname }}
+            </h4>
+
+            <ul>
+                {% for dependency in dep.reqs %}
+                    <li>
+                        Required-By:
+                        {% if dependency in all_packages %}
+                            <em>
+                        {% endif %}
+                        {{ dependency }}
+                        {% if dependency in all_packages %}
+                            </em>
+                        {% endif %}
+                    </li>
+                {% endfor %}
+
+                {% for dependency in dep.brs %}
+                    <li>
+                        BuildRequired-By:
+                        {% if dependency in all_packages %}
+                            <em>
+                        {% endif %}
+                        {{ dependency }}
+                        {% if dependency in all_packages %}
+                            </em>
+                        {% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endfor %}
+    {% endif %}
+
+    {% if package.leaves %}
+        <p>
+            Leaf packages:
+        </p>
+
+        {% for leaf in package.leaves %}
+            <ul>
+                <li>{{ leaf }}</li>
+            </ul>
+        {% endfor %}
+
+    {% endif %}
+
+{% endfor %}

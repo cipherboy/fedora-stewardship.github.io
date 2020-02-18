@@ -1,0 +1,30 @@
+title: fedora Stewardship SIG
+
+description: >-
+  The Stewardship SIG takes care of abandoned fedora packages.
+
+url:            "https://fedora-stewardship.github.io"
+baseurl:        ""
+
+github_username: fedora-stewardship
+
+markdown:       kramdown
+theme:          minima
+
+header_pages:
+  - "_pages/news.md"
+  - "_pages/sig-report.html"
+  - "_pages/sig-overview.md"
+  - "_pages/pr-report.md"
+  - "_pages/sig-backlog.md"
+
+plugins:
+  - jekyll-feed
+
+include: ["_pages"]
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+
