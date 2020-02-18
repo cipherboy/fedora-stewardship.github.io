@@ -24,7 +24,13 @@ plugins:
 include: ["_pages"]
 
 exclude:
+  - .git/
+  - .gitignore
+  - data/
   - Gemfile
   - Gemfile.lock
+  - README.md
+  - scripts/
+  - UNLICENSE
   - vendor/
 

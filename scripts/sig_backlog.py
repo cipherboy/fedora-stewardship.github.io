@@ -241,7 +241,7 @@ def main():
         package_od_percent=(str(round(statistics[stop_date]["rel_outdated_pkgs"]*100)) + "%"),
     )
 
-    with open("../docs/_pages/sig-backlog.md", "w") as file:
+    with open("../_pages/sig-backlog.md", "w") as file:
         file.write(stats_document)
 
     # create markdown document of package overview table
@@ -269,9 +269,9 @@ def main():
 
     overview_doc = "\n".join([
         "---",
-        "title:     Overview",
-        "layout:    page",
-        "permalink: /overview/",
+        "title:      Overview",
+        "layout:     page",
+        "permalink:  /overview/",
         "---",
         "",
         "![SIG Packages](/assets/sig_pkgs.png)",
@@ -282,9 +282,9 @@ def main():
         "![Number of outdated packages](/assets/od_pkgs_abs.png)",
         "![Ratio of outdated packages](/assets/od_pkgs_rel.png)",
         "",
-    ] + markdown)
+    ] + markdown + [""])
 
-    with open("../docs/_pages/sig-overview.md", "w") as file:
+    with open("../_pages/sig-overview.md", "w") as file:
         file.write(overview_doc)
 
     # start statistics at 2019-02-26 (one day before packages were added)
@@ -342,7 +342,7 @@ def main():
     pt0.grid(axis="y")
     plt.locator_params(axis="y", nbins=4)
     plt.xticks(firsts, labels)
-    plt.savefig("../docs/assets/sig_pkgs.png", bbox_inches="tight", dpi=300)
+    plt.savefig("../assets/sig_pkgs.png", bbox_inches="tight", dpi=300)
 
     # average update backlog vs. time
     pt1 = df1.plot(color="navy", lw=2, use_index=True,
@@ -351,7 +351,7 @@ def main():
     pt1.grid(axis="y")
     plt.locator_params(axis="y", nbins=3)
     plt.xticks(firsts, labels)
-    plt.savefig("../docs/assets/avg_bl_len.png", bbox_inches="tight", dpi=300)
+    plt.savefig("../assets/avg_bl_len.png", bbox_inches="tight", dpi=300)
 
     # total update backlog vs. time
     pt1s = df1s.plot(color="navy", lw=2, use_index=True,
@@ -360,7 +360,7 @@ def main():
     pt1s.grid(axis="y")
     plt.locator_params(axis="y", nbins=5)
     plt.xticks(firsts, labels)
-    plt.savefig("../docs/assets/sum_bl_len.png", bbox_inches="tight", dpi=300)
+    plt.savefig("../assets/sum_bl_len.png", bbox_inches="tight", dpi=300)
 
     # average update delay vs. time
     pt2 = df2.plot(color="navy", lw=2, use_index=True,
@@ -369,7 +369,7 @@ def main():
     pt2.grid(axis="y")
     plt.locator_params(axis="y", nbins=4)
     plt.xticks(firsts, labels)
-    plt.savefig("../docs/assets/avg_bl_dur.png", bbox_inches="tight", dpi=300)
+    plt.savefig("../assets/avg_bl_dur.png", bbox_inches="tight", dpi=300)
 
     # total update delay vs. time
     pt2s = df2s.plot(color="navy", lw=2, use_index=True,
@@ -378,7 +378,7 @@ def main():
     pt2s.grid(axis="y")
     plt.locator_params(axis="y", nbins=5)
     plt.xticks(firsts, labels)
-    plt.savefig("../docs/assets/sum_bl_dur.png", bbox_inches="tight", dpi=300)
+    plt.savefig("../assets/sum_bl_dur.png", bbox_inches="tight", dpi=300)
 
     # absolute and relative number of outdated packages
     pt3 = df3.plot(color="navy", lw=2, use_index=True,
@@ -387,7 +387,7 @@ def main():
     pt3.grid(axis="y")
     plt.locator_params(axis="y", nbins=5)
     plt.xticks(firsts, labels)
-    plt.savefig("../docs/assets/od_pkgs_abs.png", bbox_inches="tight", dpi=300)
+    plt.savefig("../assets/od_pkgs_abs.png", bbox_inches="tight", dpi=300)
 
     pt3r = df3r.plot(color="navy", lw=2, use_index=True,
                      legend=False, rot=90, figsize=(10, 5))
@@ -395,7 +395,7 @@ def main():
     pt3r.grid(axis="y")
     plt.locator_params(axis="y", nbins=5)
     plt.xticks(firsts, labels)
-    plt.savefig("../docs/assets/od_pkgs_rel.png", bbox_inches="tight", dpi=300)
+    plt.savefig("../assets/od_pkgs_rel.png", bbox_inches="tight", dpi=300)
 
     return 0
 

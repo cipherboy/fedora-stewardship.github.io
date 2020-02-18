@@ -1,1 +1,10 @@
+/_drafts/*
+/_site/
+
 /.idea/
+/.bundle/
+/.sass-cache/
+/.jekyll-metadata/
+
+/vendor/
+

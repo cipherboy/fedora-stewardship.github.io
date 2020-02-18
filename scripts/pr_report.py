@@ -62,7 +62,7 @@ def main() -> int:
     template = jinja2.Template(TEMPLATE)
     out = template.render(prs=prs)
 
-    with open("../docs/_pages/pr-report.md", "w") as file:
+    with open("../_pages/pr-report.md", "w") as file:
         file.write(out)
 
     return 0

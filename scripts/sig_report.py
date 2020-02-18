@@ -237,7 +237,7 @@ def main() -> int:
     )
 
     # write output to file
-    with open("../docs/_pages/sig-report.html", "w") as file:
+    with open("../_pages/sig-report.html", "w") as file:
         file.write(out)
 
     return 0
