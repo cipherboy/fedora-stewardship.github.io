@@ -4,5 +4,3 @@ layout:     home
 permalink:  /news/
 ---
 
-Test Test
-
