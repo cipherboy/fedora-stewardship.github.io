@@ -1,15 +1,40 @@
-#!/usr/bin/bash
+#!/usr/bin/python3
 
-set -e
+import datetime
+import os
+import subprocess
 
-pushd scripts
 
-./sig_report.py
-./pr_report.py
-./sig_backlog.py
+def main():
+    cur_dir = os.getcwd()
 
-popd
+    os.chdir("scripts")
 
-git add .
-git commit -a "$(date +%F)"
-git push
+    try:
+        ret = subprocess.run(["./get_current_compose.py"], stdout=subprocess.PIPE)
+
+        try:
+            ret.check_returncode()
+            compose = ret.stdout.decode().strip()
+        except subprocess.CalledProcessError:
+            print(ret.stdout.decode())
+            return 1
+
+        subprocess.run(["./sig_report.py", compose]).check_returncode()
+        subprocess.run(["./pr_report.py"]).check_returncode()
+        subprocess.run(["./sig_backlog.py"]).check_returncode()
+
+    except subprocess.CalledProcessError as error:
+        raise error
+
+    finally:
+        os.chdir(cur_dir)
+
+    subprocess.run(["git", "add", "."])
+    subprocess.run(["git", "commit", "-a", "-m", datetime.datetime.utcnow().strftime("%Y-%m-%d")])
+
+    return 0
+
+
+if __name__ == "__main__":
+    exit(main())
