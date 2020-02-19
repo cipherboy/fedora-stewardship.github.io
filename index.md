@@ -9,7 +9,8 @@ There's also a [Wiki page][sig-Wiki] for this SIG on the fedoraproject Wiki.
 
 The `#fedora-stewardship` IRC channel on freenode is used for synchronous
 conversations. Meetings are held bi-weekly in the `#fedora-meeting-1` channel,
-at 15:00 UTC every other Tuesday (starting April 30, 2019).
+at 15:00 UTC every other Tuesday (starting April 30, 2019). The meeting process
+is documented [here](/meetings/).
 
 
 ## Mailing List

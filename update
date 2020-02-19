@@ -1,0 +1,15 @@
+#!/usr/bin/bash
+
+set -e
+
+pushd scripts
+
+./sig_report.py
+./pr_report.py
+./sig_backlog.py
+
+popd
+
+git add .
+git commit -a "$(date +%F)"
+git push

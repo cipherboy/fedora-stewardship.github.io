@@ -17,6 +17,7 @@ header_pages:
   - "_pages/sig-overview.md"
   - "_pages/pr-report.md"
   - "_pages/sig-backlog.md"
+  - "_pages/meeting-process.md"
 
 plugins:
   - jekyll-feed
@@ -31,6 +32,7 @@ exclude:
   - Gemfile.lock
   - README.md
   - scripts/
+  - update
   - UNLICENSE
   - vendor/
 
