@@ -62,10 +62,16 @@ def is_current(compose: str) -> bool:
     added = compose["added_packages"]
     upgraded = compose["upgraded_packages"]
 
-    if added:
-        return added[0]["nvr"] in packages
-    elif upgraded:
-        return upgraded[0]["nvr"] in packages
+    # iterate over added and upgraded packages
+    for entry in added + upgraded:
+        # skip modules, they aren't in the standard rawhide repos
+        if ".module_" in entry["nvr"]:
+            continue
+        # check if the first non-module nvr is in the repo
+        else:
+            return entry["nvr"] in packages
+    # all added and upgraded packages were considered (or there were none),
+    # but none were useful for determining if the repo is up to date
     else:
         raise Exception("Cannot determine if the rawhide repo is current.")
 
