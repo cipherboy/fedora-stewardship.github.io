@@ -12306,6 +12306,12 @@
     "version": "4.2.1"
   },
   {
+    "package": "maven-resolver",
+    "event": "released",
+    "date": "2019-08-15",
+    "version": "1.4.1"
+  },
+  {
     "package": "testng",
     "event": "released",
     "date": "2019-08-17",
@@ -14820,6 +14826,12 @@
     "version": "1.20"
   },
   {
+    "package": "slf4j",
+    "event": "updated",
+    "date": "2020-02-05",
+    "version": "1.7.30"
+  },
+  {
     "package": "spec-version-maven-plugin",
     "event": "released",
     "date": "2020-02-07",
@@ -14908,5 +14920,35 @@
     "event": "released",
     "date": "2020-02-16",
     "version": "2.8.6"
+  },
+  {
+    "package": "plexus-pom",
+    "event": "released",
+    "date": "2020-02-19",
+    "version": "6.2"
+  },
+  {
+    "package": "plexus-languages",
+    "event": "released",
+    "date": "2020-02-19",
+    "version": "1.0.5"
+  },
+  {
+    "package": "junit5",
+    "event": "updated",
+    "date": "2020-02-19",
+    "version": "5.6.0"
+  },
+  {
+    "package": "weld-parent",
+    "event": "updated",
+    "date": "2020-02-19",
+    "version": "40"
+  },
+  {
+    "package": "netty",
+    "event": "removed",
+    "date": "2020-02-19",
+    "version": null
   }
 ]
