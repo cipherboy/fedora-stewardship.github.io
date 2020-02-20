@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 import subprocess
-from typing import List
+from typing import List, Tuple
 
 import requests
 
@@ -23,12 +23,13 @@ def get_changelog_json(compose: str) -> dict:
     return data
 
 
-def get_rawhide_packages() -> List[str]:
+def get_rawhide_packages() -> Tuple[List[str], List[str]]:
     ret = subprocess.run(
         [
             "dnf", "--quiet",
             "--installroot", "/tmp/dnf",
             "--releasever", "rawhide",
+            "--repo", "rawhide",
             "--repo", "rawhide-source",
             "makecache", "--refresh",
         ],
@@ -51,13 +52,29 @@ def get_rawhide_packages() -> List[str]:
     )
 
     ret.check_returncode()
+    src = ret.stdout.decode().splitlines(keepends=False)
 
-    return ret.stdout.decode().splitlines(keepends=False)
+    ret = subprocess.run(
+        [
+            "dnf", "--quiet",
+            "--installroot", "/tmp/dnf",
+            "--releasever", "rawhide",
+            "--repo", "rawhide",
+            "repoquery", "--nvr"
+        ],
+        stdout=subprocess.PIPE,
+        stderr=subprocess.STDOUT,
+    )
+
+    ret.check_returncode()
+    pkg = ret.stdout.decode().splitlines(keepends=False)
+
+    return src, pkg
 
 
 def is_current(compose: str) -> bool:
     compose = get_changelog_json(compose)
-    packages = get_rawhide_packages()
+    src, pkg = get_rawhide_packages()
 
     added = compose["added_packages"]
     upgraded = compose["upgraded_packages"]
@@ -67,9 +84,14 @@ def is_current(compose: str) -> bool:
         # skip modules, they aren't in the standard rawhide repos
         if ".module_" in entry["nvr"]:
             continue
-        # check if the first non-module nvr is in the repo
+        # check if the first non-module nvr is in the source and binary repos
         else:
-            return entry["nvr"] in packages
+            rpms = [
+                "{n}-{vr}".format(n=rpm, vr="-".join(entry["nvr"].rsplit("-", 2)[1:]))
+                for rpm in entry["rpms"]
+            ]
+            # any / all: Version doesn't have to be identical for subpackages
+            return entry["nvr"] in src and any(rpm in pkg for rpm in rpms)
     # all added and upgraded packages were considered (or there were none),
     # but none were useful for determining if the repo is up to date
     else:
