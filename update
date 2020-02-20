@@ -71,7 +71,9 @@ def main():
         "_pages/sig-overview.md",
         "_pages/sig-report.html",
     ])
-    subprocess.run(["git", "commit", "-a", "-m", datetime.datetime.utcnow().strftime("%Y-%m-%d")])
+
+    commit_msg = f"{datetime.datetime.utcnow().strftime('%Y-%m-%d')} (rawhide:{compose})"
+    subprocess.run(["git", "commit", "-a", "-m", commit_msg])
 
     return 0
 
