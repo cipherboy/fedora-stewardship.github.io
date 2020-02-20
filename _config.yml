@@ -25,6 +25,7 @@ plugins:
 include: ["_pages"]
 
 exclude:
+  - .compose
   - .git/
   - .gitignore
   - data/
