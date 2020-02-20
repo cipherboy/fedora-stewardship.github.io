@@ -14950,5 +14950,23 @@
     "event": "removed",
     "date": "2020-02-19",
     "version": null
+  },
+  {
+    "package": "plexus-compiler",
+    "event": "updated",
+    "date": "2020-02-19",
+    "version": "2.8.6"
+  },
+  {
+    "package": "cbi-plugins",
+    "event": "removed",
+    "date": "2020-02-20",
+    "version": null
+  },
+  {
+    "package": "xml-maven-plugin",
+    "event": "removed",
+    "date": "2020-02-20",
+    "version": null
   }
 ]
