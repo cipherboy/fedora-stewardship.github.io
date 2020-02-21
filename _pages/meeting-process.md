@@ -2,6 +2,7 @@
 title:      Meeting Process
 layout:     page
 permalink:  /meetings/
+updated:    2020-02-21
 ---
 
 This page documents the process for the fortnightly IRC meetings.

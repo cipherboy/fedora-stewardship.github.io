@@ -18,7 +18,7 @@ header_pages:
   - "_pages/sig-overview.md"
   - "_pages/pr-report.md"
   - "_pages/sig-backlog.md"
-  - "_pages/meeting-process.md"
+  - "_pages/interna.md"
 
 plugins:
   - jekyll-feed
@@ -28,6 +28,7 @@ include: ["_pages"]
 exclude:
   - .compose
   - .git/
+  - .idea/
   - .gitignore
   - data/
   - Gemfile
