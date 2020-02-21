@@ -10,6 +10,7 @@ github_username: fedora-stewardship
 
 markdown:       kramdown
 theme:          minima
+show_excerpts:  true
 
 header_pages:
   - "_pages/news.md"
