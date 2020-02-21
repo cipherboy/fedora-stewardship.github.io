@@ -5,6 +5,8 @@ updated:    2020-02-21
 
 There's also a [Wiki page][sig-Wiki] for this SIG on the fedoraproject Wiki.
 
+An up-to-date overview of the packages that are maintained by this SIG can be
+viewed in a [Google Docs spreadsheet][sig-pkg-overview].
 
 ## IRC and Meetings
 
@@ -62,6 +64,7 @@ an experienced packager and want to take some packages off our hands, open a
 <!-- Links -->
 
 [sig-wiki]: https://fedoraproject.org/wiki/SIGs/Stewardship
+[sig-pkg-overview]: https://docs.google.com/spreadsheets/d/11RlwsEs-LJgTOrUD1P4LpsvW9icVQrvrU5RFqxUuccY
 [fedora calendar]: https://apps.fedoraproject.org/calendar/location/fedora-meeting-1%40irc.freenode.net/#m9655
 [src-group]: https://src.fedoraproject.org/group/stewardship-sig
 [src.fedoraproject.org]: https://src.fedoraproject.org
