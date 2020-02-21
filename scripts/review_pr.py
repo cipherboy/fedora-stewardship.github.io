@@ -19,10 +19,6 @@ LRU_CACHE_SIZE = None
 
 DEFAULT_BLACKLIST = list(
     re.compile(pattern) for pattern in [
-        # eclipse is already broken in rawhide
-        "^eclipse.*",
-        # jenkins is already broken in rawhide
-        "^jenkins.*",
         # these packages' sources are missing
         "^elasticsearch$",
         "^fedora-business-cards$",
@@ -82,15 +78,26 @@ def copr_repo_exists(copr: str) -> bool:
     return ret.returncode == 0
 
 
-def copr_repo_create(copr: str):
+def copr_repo_create(copr: str, chroots: List[str]):
     description = "Repository for test-rebuilding packages in preparation for a pull request."
 
-    ret = sp.run(
-        ["copr-cli", "create", "--description", description,
-         "--unlisted-on-hp", "on", "--delete-after-days", "30",
-         "--chroot", "fedora-rawhide-x86_64", copr],
-        stdout=sp.PIPE,
-        stderr=sp.STDOUT)
+    cmd = [
+        "copr-cli", "create",
+        "--description", description,
+        "--unlisted-on-hp", "on",
+        "--delete-after-days", "30",
+    ]
+
+    # if no chroots were specified, default to fedora-rawhide-x86_64
+    if not chroots:
+        chroots.append("fedora-rawhide-x86_64")
+
+    for chroot in chroots:
+        cmd.extend(["--chroot", chroot])
+
+    cmd.append(copr)
+
+    ret = sp.run(cmd, stdout=sp.PIPE, stderr=sp.STDOUT)
 
     try:
         ret.check_returncode()
@@ -499,6 +506,8 @@ def main() -> int:
                         help="regexes for packages to build from git")
     parser.add_argument("--no-recursive", "-n", action="store_const", const=True, default=False,
                         help="only rebuild directly dependent packages")
+    parser.add_argument("--chroot", action="append", default=[],
+                        help="create COPR project with the specified chroot")
 
     args = vars(parser.parse_args())
 
@@ -512,6 +521,7 @@ def main() -> int:
     exclude = args["exclude"]
     from_git = args["from_git"]
     no_recursive = args["no_recursive"]
+    chroots = args["chroot"]
 
     if noblacklist:
         blacklist = []
@@ -536,7 +546,7 @@ def main() -> int:
         projects.append({"user": user, "package": package, "branch": branch})
 
     if not copr_repo_exists(copr):
-        copr_repo_create(copr)
+        copr_repo_create(copr, chroots)
         print("Created COPR repository.")
 
     print()
