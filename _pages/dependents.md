@@ -7,10 +7,10 @@ updated:    2020-02-21
 
 ## Dogtag PKI
 
- - URL: http://dogtagpki.org
- - GitHub: http://github.com/dogtagpki
+ - URL: <https://www.dogtagpki.org>
+ - GitHub: <https://github.com/dogtagpki>
  - Main component: PKI
- - Point of Contact: pki-devel@redhat.com
+ - Point of Contact: <pki-devel@redhat.com>
 
 ### Overview
 
@@ -38,7 +38,7 @@ by Dogtag and its dependents:
 
 ### Testing Procedure
 
-PKI runs commit-triggered builds in their [COPR](pki-copr) against all
+PKI runs commit-triggered builds in their [COPR][pki-copr] against all
 current Fedora builds and Rawhide. This might catch problems in build-time
 dependencies. If you're particularly concerned about a package update or
 rebase, feel free to contact the mailing list above and we'll be happy to
@@ -46,3 +46,4 @@ run a quick smoke test.
 
 <!-- Links -->
 [pki-copr]: https://copr.fedorainfracloud.org/coprs/g/pki/master/
+
