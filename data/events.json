@@ -14958,6 +14958,12 @@
     "version": "2.8.6"
   },
   {
+    "package": "maven-doxia-sitetools",
+    "event": "released",
+    "date": "2020-02-19",
+    "version": "1.9.2"
+  },
+  {
     "package": "cbi-plugins",
     "event": "removed",
     "date": "2020-02-20",
