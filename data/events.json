@@ -14974,5 +14974,59 @@
     "event": "removed",
     "date": "2020-02-20",
     "version": null
+  },
+  {
+    "package": "aalto-xml",
+    "event": "removed",
+    "date": "2020-02-26",
+    "version": null
+  },
+  {
+    "package": "compress-lzf",
+    "event": "removed",
+    "date": "2020-02-26",
+    "version": null
+  },
+  {
+    "package": "icu4j",
+    "event": "removed",
+    "date": "2020-02-26",
+    "version": null
+  },
+  {
+    "package": "jboss-marshalling",
+    "event": "removed",
+    "date": "2020-02-26",
+    "version": null
+  },
+  {
+    "package": "jetty-alpn-api",
+    "event": "removed",
+    "date": "2020-02-26",
+    "version": null
+  },
+  {
+    "package": "lz4-java",
+    "event": "removed",
+    "date": "2020-02-26",
+    "version": null
+  },
+  {
+    "package": "lzma-java",
+    "event": "removed",
+    "date": "2020-02-26",
+    "version": null
+  },
+  {
+    "package": "objectweb-asm3",
+    "event": "removed",
+    "date": "2020-02-26",
+    "version": null
+  },
+  {
+    "package": "os-maven-plugin",
+    "event": "removed",
+    "date": "2020-02-26",
+    "version": null
   }
 ]
