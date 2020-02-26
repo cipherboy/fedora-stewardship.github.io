@@ -14,7 +14,6 @@ permalink:  /overview/
 
 | package | last updated | last release | status |
 | ------- | ------------ | ------------ | ------ |
-| aalto-xml | 1.2.2 | 1.2.2 | current |
 | ant | 1.10.6 | 1.10.7 | 178 days behind |
 | ant-antunit | 1.3 | 1.4 | 614 days behind |
 | ant-contrib | 1.0~beta3 | 1.0~beta3 | current |
@@ -45,7 +44,6 @@ permalink:  /overview/
 | cal10n | 0.8.1 | 0.8.1 | current |
 | cdi-api | 1.2 | 2.0.0 | 1023 days behind |
 | codemodel | 2.6 | 2.6 | current |
-| compress-lzf | 1.0.4 | 1.0.4 | current |
 | cpptasks | 1.0~b5 | 1.0~b5 | current |
 | dain-snappy | 0.4 | 0.4 | current |
 | decentxml | 1.4 | 1.4 | current |
@@ -81,7 +79,6 @@ permalink:  /overview/
 | hamcrest | 1.3 | 2.2 | 433 days behind |
 | hawtjni | 1.17 | 1.17 | current |
 | httpcomponents-project | 11 | 11 | current |
-| icu4j | 64.2 | 65.1 | 146 days behind |
 | isorelax | 0 | 0 | current |
 | istack-commons | 2.21 | 3.0.10 | 1724 days behind |
 | jackson-annotations | 2.10.2 | 2.10.2 | current |
@@ -107,7 +104,6 @@ permalink:  /overview/
 | jboss-jaxrs-2.0-api | 1.0.0 | 1.0.1 | 765 days behind |
 | jboss-logging | 3.4.1 | 3.4.1 | current |
 | jboss-logging-tools | 2.2.0 | 2.2.1 | 97 days behind |
-| jboss-marshalling | 1.4.11 | 2.0.9 | 931 days behind |
 | jboss-modules | 1.5.2 | 1.9.2 | 1065 days behind |
 | jboss-servlet-3.0-api | 1.0.2 | 1.0.2 | current |
 | jboss-servlet-3.1-api | 1.0.2 | 1.0.2 | current |
@@ -116,7 +112,6 @@ permalink:  /overview/
 | jdepend | 2.9.1 | 2.9.1 | current |
 | jdependency | 1.2 | 2.3.0 | 785 days behind |
 | jdom2 | 2.0.6 | 2.0.6 | current |
-| jetty-alpn-api | 1.1.3 | 1.1.3 | current |
 | jetty-build-support | 1.4 | 1.5 | 454 days behind |
 | jetty-parent | 19 | 25 | 2746 days behind |
 | jetty-toolchain | 1.4 | 1.7 | 1822 days behind |
@@ -131,8 +126,6 @@ permalink:  /overview/
 | kxml | 2.3.0 | 2.3.0 | current |
 | log4j | 2.13.0 | 2.13.0 | current |
 | log4j12 | 1.2.17 | 1.2.17 | current |
-| lz4-java | 1.3.0 | 1.7.1 | 937 days behind |
-| lzma-java | 1.3 | 1.3 | current |
 | maven | 3.6.1 | 3.6.3 | 183 days behind |
 | maven-antrun-plugin | 1.8 | 1.8 | current |
 | maven-archiver | 3.5.0 | 3.5.0 | current |
@@ -181,10 +174,8 @@ permalink:  /overview/
 | mojo-parent | 40 | 50 | 458 days behind |
 | munge-maven-plugin | 1.0 | 1.0 | current |
 | mvel | 2.2.8 | 2.4.5 | 1351 days behind |
-| objectweb-asm3 | 3.3.1 | 4.1 | 2456 days behind |
 | objectweb-pom | 1.5 | 1.5 | current |
 | opentest4j | 1.1.0 | 1.2.0 | 534 days behind |
-| os-maven-plugin | 1.2.3 | 1.6.2 | 1652 days behind |
 | osgi-compendium | 7.0.0 | 7.0.0 | current |
 | osgi-core | 7.0.0 | 7.0.0 | current |
 | paranamer | 2.8 | 2.8 | current |

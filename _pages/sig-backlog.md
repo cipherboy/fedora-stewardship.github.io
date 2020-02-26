@@ -4,7 +4,7 @@ layout:     page
 permalink:  /backlog/
 ---
 
-78 of 226 out of date (35%)
+73 of 217 out of date (34%)
 
 
 
@@ -413,15 +413,6 @@ permalink:  /backlog/
 
 
 
-## icu4j
-- Last release: 65.1
-- Last updated: 64.2
-
-### Update backlog:
-
-
-- 65.1 (146 days ago)
-
 
 
 
@@ -714,24 +705,6 @@ permalink:  /backlog/
 
 
 
-## jboss-marshalling
-- Last release: 2.0.9
-- Last updated: 1.4.11
-
-### Update backlog:
-
-
-- 2.0.0 (931 days ago)
-- 2.0.1 (896 days ago)
-- 2.0.2 (880 days ago)
-- 2.0.3 (743 days ago)
-- 2.0.4 (730 days ago)
-- 2.0.5 (712 days ago)
-- 2.0.6 (547 days ago)
-- 2.0.7 (315 days ago)
-- 2.0.8 (197 days ago)
-- 2.0.9 (187 days ago)
-
 
 
 ## jboss-modules
@@ -946,21 +919,6 @@ permalink:  /backlog/
 
 
 
-
-## lz4-java
-- Last release: 1.7.1
-- Last updated: 1.3.0
-
-### Update backlog:
-
-
-- 1.4.0 (937 days ago)
-- 1.4.1 (782 days ago)
-- 1.5.0 (519 days ago)
-- 1.5.1 (365 days ago)
-- 1.6.0 (287 days ago)
-- 1.7.0 (81 days ago)
-- 1.7.1 (39 days ago)
 
 
 
@@ -1233,15 +1191,6 @@ permalink:  /backlog/
 
 
 
-## objectweb-asm3
-- Last release: 4.1
-- Last updated: 3.3.1
-
-### Update backlog:
-
-
-- 4.1 (2456 days ago)
-
 
 
 
@@ -1256,21 +1205,6 @@ permalink:  /backlog/
 - 1.2.0 (265 days ago)
 
 
-
-## os-maven-plugin
-- Last release: 1.6.2
-- Last updated: 1.2.3
-
-### Update backlog:
-
-
-- 1.3.0 (1652 days ago)
-- 1.4.0 (1629 days ago)
-- 1.4.1 (1619 days ago)
-- 1.5.0 (1435 days ago)
-- 1.6.0 (675 days ago)
-- 1.6.1 (501 days ago)
-- 1.6.2 (378 days ago)
 
 
 
