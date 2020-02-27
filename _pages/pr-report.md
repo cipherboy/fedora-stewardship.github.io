@@ -19,3 +19,8 @@ permalink:  /pr-report/
 
 - [#1: Update to upstream version 3.6.0](https://src.fedoraproject.org/rpms/maven-plugin-tools/pull-request/1)
 
+
+## woodstox-core
+
+- [#5: Rebase to v6.1.0](https://src.fedoraproject.org/rpms/woodstox-core/pull-request/5)
+
