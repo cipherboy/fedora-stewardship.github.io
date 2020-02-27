@@ -15028,5 +15028,11 @@
     "event": "removed",
     "date": "2020-02-26",
     "version": null
+  },
+  {
+    "package": "woodstox-core",
+    "event": "released",
+    "date": "2020-02-27",
+    "version": "6.1.0"
   }
 ]
