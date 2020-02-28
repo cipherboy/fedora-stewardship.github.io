@@ -14976,6 +14976,12 @@
     "version": null
   },
   {
+    "package": "jflex",
+    "event": "released",
+    "date": "2020-02-21",
+    "version": "1.8.0"
+  },
+  {
     "package": "aalto-xml",
     "event": "removed",
     "date": "2020-02-26",
@@ -15034,5 +15040,23 @@
     "event": "released",
     "date": "2020-02-27",
     "version": "6.1.0"
+  },
+  {
+    "package": "mvel",
+    "event": "released",
+    "date": "2020-02-27",
+    "version": "2.4.7"
+  },
+  {
+    "package": "woodstox-core",
+    "event": "released",
+    "date": "2020-02-28",
+    "version": "6.1.1"
+  },
+  {
+    "package": "jflex",
+    "event": "released",
+    "date": "2020-02-28",
+    "version": "1.8.0"
   }
 ]
