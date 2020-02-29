@@ -17,6 +17,8 @@ permalink:  /pr-report/
 
 ## maven-plugin-tools
 
+- [#3: Upgraded to latest upstream version 3.6.0](https://src.fedoraproject.org/rpms/maven-plugin-tools/pull-request/3)
+
 - [#1: Update to upstream version 3.6.0](https://src.fedoraproject.org/rpms/maven-plugin-tools/pull-request/1)
 
 
