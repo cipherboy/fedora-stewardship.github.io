@@ -2,14 +2,15 @@
 
 import argparse
 import re
-from typing import Dict, List, Union
+import time
+from typing import Dict, List, Set
 
 import requests
 
-from stewardship import get_b2s_mapping, get_s2b_mapping, GetRequires, get_dep_tree, refresh_cache
+from stewardship import get_b2s_mapping, get_s2b_mapping, get_dep_tree, refresh_cache
 
 LRU_CACHE_SIZE = None
-MAX_DEPTH = 5
+MAX_DEPTH = 15
 
 
 DEPENDENCY_BLACKLIST = list(
@@ -24,15 +25,19 @@ def is_blacklisted(package: str, blacklist) -> bool:
     return any(regex.match(package) for regex in blacklist)
 
 
+def get_sig_packages():
+    data = requests.get("https://src.fedoraproject.org/api/0/group/stewardship-sig?projects=true").json()
+    projects = data["projects"]
+
+    return list(project["name"] for project in projects)
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
 
     parser.add_argument(
         "--maxdepth", action="store", type=int, default=MAX_DEPTH,
-        help="max number of hops in dependency graph (default: 5, increase with caution - blows up script runtime)")
-    parser.add_argument(
-        "package", action="store", nargs="+",
-        help="list of packages to check 'SIG leaf' status for")
+        help="max number of traversed edges in dependency graph (default: 15)")
     parser.add_argument(
         "--koji", action="store_const", const=True, default=False,
         help="use koji repository directly instead of rawhide")
@@ -46,7 +51,6 @@ def main() -> int:
     args = vars(parser.parse_args())
 
     maxdepth: int = args["maxdepth"]
-    packages: List[str] = args["package"]
     koji: bool = args["koji"]
     no_refresh: bool = args["no_refresh"]
     include: List[str] = args["include"]
@@ -60,126 +64,108 @@ def main() -> int:
     if not no_refresh:
         print("Refreshing dnf cache ...")
         refresh_cache(repos)
-
-    get_requires = GetRequires(repos)
+        print()
 
     # getting binary <-> source package mappings
     b2s = get_b2s_mapping(repos)
     s2b = get_s2b_mapping(b2s)
 
-    # fetch SIG packages
+    # query src.fedoraproject.org for packages maintained by @stewardship-sig
     print("Getting group information from https://src.fedoraproject.org ...")
+    sig_packages = get_sig_packages()
+    print()
 
-    sig = requests.get("https://src.fedoraproject.org/api/0/group/stewardship-sig?projects=true")
-    ret = sig.json()
-    projects = ret["projects"]
+    # include packages supplied on the command line
+    source_packages = sig_packages + include
 
-    source_packages = list(project["name"] for project in projects)
-
-    # include packages supplied on command line
-    source_packages.extend(include)
-
+    # calculate list of binary packages owned by the SIG
     binary_packages = list()
     for source_package in source_packages:
         binary_packages.extend(s2b[source_package])
 
-    dep_map = dict()
-    depinfo = dict()
+    # initialize candidate list with all SIG source packages
+    candidates = sig_packages.copy()
 
-    for package in packages:
-        print(" -", package)
+    causes: Dict[str, Set[str]] = dict()
 
-        package_depended: List[Dict[str, Union[str, List[str]]]] = []
-        package_leaves: List[str] = []
+    for depth in range(1, maxdepth + 1):
+        dep_tree = dict()
 
-        # iterate over all built binary packages
-        binaries = s2b[package]
+        print(f"Traversing dependency graph for {depth} edge(s).")
+        print("Currently considered SIG leaf candidates:")
+        for package in candidates:
+            print(" -", package)
+        print()
 
-        all_deps: List[str] = []
+        time.sleep(5)
 
-        for binary in binaries:
-            print("   -", binary)
+        for package in candidates:
+            print(" -", package, "(source)")
 
-            # calculate dependencies from dnf metadata
-            brs, reqs = get_requires(binary)
-            allrec = get_dep_tree(binary, set(), s2b, b2s, maxdepth, DEPENDENCY_BLACKLIST, repos)
-            allrec.remove(binary)
+            # iterate over all built binary packages
+            binaries = s2b[package]
 
-            # save metadata for later
-            dep_map[binary] = dict()
-            dep_map[binary]["reqs"] = reqs
-            dep_map[binary]["brs"] = brs
-            dep_map[binary]["all-recursive"] = allrec
+            for binary in binaries:
+                print("   -", binary, "(binary)")
 
-            all_deps.extend(reqs + brs)
+                # calculate dependency tree from dnf metadata
+                allrec = get_dep_tree(binary, set(), s2b, b2s, depth, DEPENDENCY_BLACKLIST, repos)
 
-            # check if the package isn't depended upon
-            if len(reqs + brs) == 0:
-                package_leaves.append(binary)
+                # remove dependencies on "self"
+                allrec.remove(binary)
 
-            # package is depended upon by external packages
-            else:
-                package_depended.append({"srcname": package,
-                                         "pkgname": binary,
-                                         "reqs": reqs,
-                                         "brs": brs})
+                # save metadata for later
+                dep_tree[binary] = allrec
 
-        # check if the subpackages only depend within a source package
-        if all((dep in binaries) for dep in all_deps):
-            package_leaves.append(package)
+        # generate list of "SIG leaf" packages
+        # (only packages outside of this group depend on them)
+        not_sig_leaves: Set[str] = set()
 
-        depinfo[package] = {
-            "depended": package_depended,
-            "leaves": package_leaves,
-        }
+        for package in candidates:
+            binaries = s2b[package]
 
-    # generate list of "total leaf" packages
-    # (no packages at all depend on any part of them)
-    leaves: List[str] = []
+            # ignore dependencies on "self"
+            filtered_all_packages = binary_packages.copy()
+            for binary in binaries:
+                if binary in filtered_all_packages:
+                    filtered_all_packages.remove(binary)
 
-    for pkg in depinfo.keys():
-        if not depinfo[pkg]["depended"]:
-            leaves.append(pkg)
+            # collect all dependencies
+            all_deps = set()
+            for binary in binaries:
+                for dep in dep_tree[binary]:
+                    all_deps.add(dep)
 
-    # generate list of "SIG leaf" packages
-    # (only packages outside of this group depend on them)
-    sig_leaves: List[str] = []
+            # check if any dependencies are SIG binary packages
+            for dep in all_deps:
+                if dep in filtered_all_packages:
+                    not_sig_leaves.add(package)
 
-    for package in packages:
-        binaries = s2b[package]
+                    # keep track of non-leaf status causes
+                    if package not in causes.keys():
+                        causes[package] = set()
 
-        # ignore dependencies on "self"
-        filtered_all_packages = binary_packages.copy()
-        for binary in binaries:
-            if binary in filtered_all_packages:
-                filtered_all_packages.remove(binary)
+                    causes[package].add(dep)
 
-        all_deps = []
+        print()
 
-        # collect all dependencies
-        for binary in binaries:
-            all_deps.extend(dep_map[binary]["all-recursive"])
+        print(f"Traversed dependency graph for {depth} edge(s).")
+        for package in not_sig_leaves:
+            print(f" - {package} is not a SIG leaf")
+            candidates.remove(package)
+        print()
 
-        # if none of the dependents are within our package set: SIG leaf
-        if not any((dep in filtered_all_packages) for dep in all_deps):
-            sig_leaves.append(package)
+    # print non-SIG-leaf packages
+    for key, values in causes.items():
+        print(f" - {key} is required by:")
+        for package in sorted(values):
+            print(f"   - {package}")
+    print()
 
-    # print updated SIG leaves status
-    print(f"Checked for SIG leaf status up to a dependency graph depth of {maxdepth}.")
-
-    for package in packages:
-        if package in sig_leaves:
-            print(f"Package is a SIG leaf: {package}")
-        else:
-            print(f"Package is not a SIG leaf: {package}")
-            print("It is (transitively) depended on by:")
-
-            for pkg in s2b[package]:
-                deps = dep_map[pkg]["all-recursive"]
-
-                for dep in deps:
-                    if dep in binary_packages:
-                        print(f" - {dep}")
+    # print remaining candidates
+    for package in candidates:
+        print(f" - Package is a SIG leaf: {package}")
+    print()
 
     return 0
 
