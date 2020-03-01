@@ -15036,6 +15036,12 @@
     "version": null
   },
   {
+    "package": "log4j",
+    "event": "released",
+    "date": "2020-02-26",
+    "version": "2.13.1"
+  },
+  {
     "package": "woodstox-core",
     "event": "released",
     "date": "2020-02-27",
@@ -15058,5 +15064,17 @@
     "event": "released",
     "date": "2020-02-28",
     "version": "1.8.0"
+  },
+  {
+    "package": "plexus-archiver",
+    "event": "released",
+    "date": "2020-02-29",
+    "version": "4.2.2"
+  },
+  {
+    "package": "jsoup",
+    "event": "released",
+    "date": "2020-03-01",
+    "version": "1.13.1"
   }
 ]
