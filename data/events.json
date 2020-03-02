@@ -15076,5 +15076,17 @@
     "event": "released",
     "date": "2020-03-01",
     "version": "1.13.1"
+  },
+  {
+    "package": "auto",
+    "event": "removed",
+    "date": "2020-03-02",
+    "version": null
+  },
+  {
+    "package": "decentxml",
+    "event": "removed",
+    "date": "2020-03-02",
+    "version": null
   }
 ]
