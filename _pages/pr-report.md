@@ -20,6 +20,31 @@ permalink:  /pr-report/
 - [#3: update to version 1.11.4](https://src.fedoraproject.org/rpms/felix-utils/pull-request/3)
 
 
+## jackson-annotations
+
+- [#5: update to version 2.10.3](https://src.fedoraproject.org/rpms/jackson-annotations/pull-request/5)
+
+
+## jackson-core
+
+- [#5: update to version 2.10.3](https://src.fedoraproject.org/rpms/jackson-core/pull-request/5)
+
+
+## jackson-databind
+
+- [#5: update to version 2.10.3](https://src.fedoraproject.org/rpms/jackson-databind/pull-request/5)
+
+
+## jackson-jaxrs-providers
+
+- [#7: update to version 2.10.3](https://src.fedoraproject.org/rpms/jackson-jaxrs-providers/pull-request/7)
+
+
+## jackson-modules-base
+
+- [#4: update to version 2.10.3](https://src.fedoraproject.org/rpms/jackson-modules-base/pull-request/4)
+
+
 ## junit
 
 - [#1: Rebase to version 4.13](https://src.fedoraproject.org/rpms/junit/pull-request/1)
