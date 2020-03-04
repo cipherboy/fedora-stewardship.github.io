@@ -15124,5 +15124,89 @@
     "event": "released",
     "date": "2020-03-03",
     "version": "2.20.3"
+  },
+  {
+    "package": "plexus-archiver",
+    "event": "updated",
+    "date": "2020-03-04",
+    "version": "4.2.2"
+  },
+  {
+    "package": "log4j",
+    "event": "updated",
+    "date": "2020-03-04",
+    "version": "2.13.1"
+  },
+  {
+    "package": "woodstox-core",
+    "event": "updated",
+    "date": "2020-03-04",
+    "version": "6.1.1"
+  },
+  {
+    "package": "plexus-languages",
+    "event": "updated",
+    "date": "2020-03-04",
+    "version": "1.0.5"
+  },
+  {
+    "package": "plexus-pom",
+    "event": "updated",
+    "date": "2020-03-04",
+    "version": "6.2"
+  },
+  {
+    "package": "apache-parent",
+    "event": "updated",
+    "date": "2020-03-04",
+    "version": "23"
+  },
+  {
+    "package": "felix-utils",
+    "event": "updated",
+    "date": "2020-03-04",
+    "version": "1.11.4"
+  },
+  {
+    "package": "jackson-bom",
+    "event": "updated",
+    "date": "2020-03-04",
+    "version": "2.10.3"
+  },
+  {
+    "package": "apache-commons-compress",
+    "event": "updated",
+    "date": "2020-03-04",
+    "version": "1.20"
+  },
+  {
+    "package": "jackson-annotations",
+    "event": "updated",
+    "date": "2020-03-04",
+    "version": "2.10.3"
+  },
+  {
+    "package": "jackson-core",
+    "event": "updated",
+    "date": "2020-03-04",
+    "version": "2.10.3"
+  },
+  {
+    "package": "jackson-databind",
+    "event": "updated",
+    "date": "2020-03-04",
+    "version": "2.10.3"
+  },
+  {
+    "package": "jackson-modules-base",
+    "event": "updated",
+    "date": "2020-03-04",
+    "version": "2.10.3"
+  },
+  {
+    "package": "jackson-jaxrs-providers",
+    "event": "updated",
+    "date": "2020-03-04",
+    "version": "2.10.3"
   }
 ]
