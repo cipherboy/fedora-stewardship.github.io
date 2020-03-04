@@ -15208,5 +15208,41 @@
     "event": "updated",
     "date": "2020-03-04",
     "version": "2.10.3"
+  },
+  {
+    "package": "cpptasks",
+    "event": "removed",
+    "date": "2020-03-04",
+    "version": null
+  },
+  {
+    "package": "jetty-build-support",
+    "event": "removed",
+    "date": "2020-03-04",
+    "version": null
+  },
+  {
+    "package": "maven-injection-plugin",
+    "event": "removed",
+    "date": "2020-03-04",
+    "version": null
+  },
+  {
+    "package": "maven-mapping",
+    "event": "removed",
+    "date": "2020-03-04",
+    "version": null
+  },
+  {
+    "package": "mvel",
+    "event": "removed",
+    "date": "2020-03-04",
+    "version": null
+  },
+  {
+    "package": "randomizedtesting",
+    "event": "removed",
+    "date": "2020-03-04",
+    "version": null
   }
 ]
