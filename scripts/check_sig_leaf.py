@@ -15,8 +15,17 @@ MAX_DEPTH = 15
 
 DEPENDENCY_BLACKLIST = list(
     re.compile(pattern) for pattern in [
+        # javadoc subpackages take a long time and have no relevant dependencies
         ".*-javadoc$",
+        # sagemath docs contain huge numbers of files and take forever to check
+        "^sagemath-doc.*",
+        # jruby is not interesting for us, and it pulls in all rubygems
         "^jruby.*",
+        # texlive is not interesting for us, and it's a huge can of worms
+        "^texlive.*",
+        # also skip python3 and nodejs stacks
+        "^nodejs.*",
+        "^python.*",
     ]
 )
 
