@@ -5,7 +5,7 @@ permalink:  /report/
 ---
 
 <p>
-    rawhide compose: 20200303.n.0; Rendered last at: 2020-03-04T13:24:25.244919 (UTC)
+    rawhide compose: 20200304.n.1; Rendered last at: 2020-03-05T18:26:58.028719 (UTC)
 </p>
 
 <h2 id="members">
@@ -1318,32 +1318,19 @@ permalink:  /report/
 
 
 <h2 id="sig-leaves">
-    SIG leaf Packages (up to 3 down the dependency graph)
+    SIG leaf Packages
 </h2>
-
-<p>
-    Only packages up to 3 down the dependency graph are considered
-    to make running the report possible within a few hours, not a few <em>days</em>.
-</p>
 
 
     <ul>
         
             <li>ant-antunit</li>
         
-            <li>guava20</li>
-        
-            <li>jboss-el-2.2-api</li>
-        
             <li>jboss-el-3.0-api</li>
-        
-            <li>jboss-servlet-3.0-api</li>
         
             <li>jboss-servlet-3.1-api</li>
         
             <li>jetty-toolchain</li>
-        
-            <li>resteasy</li>
         
             <li>simple-xml</li>
         
@@ -2628,6 +2615,13 @@ permalink:  /report/
                         BuildRequired-By:
                         
                         rhino
+                        
+                    </li>
+                
+                    <li>
+                        BuildRequired-By:
+                        
+                        rstudio
                         
                     </li>
                 
@@ -5205,6 +5199,13 @@ permalink:  /report/
                         
                     </li>
                 
+                    <li>
+                        BuildRequired-By:
+                        
+                        maven-native
+                        
+                    </li>
+                
             </ul>
         
     
@@ -6425,6 +6426,13 @@ permalink:  /report/
                         maven-enforcer
                         
                             </em>
+                        
+                    </li>
+                
+                    <li>
+                        BuildRequired-By:
+                        
+                        maven-native
                         
                     </li>
                 
@@ -8021,6 +8029,13 @@ permalink:  /report/
                     <li>
                         Required-By:
                         
+                        native-maven-plugin
+                        
+                    </li>
+                
+                    <li>
+                        Required-By:
+                        
                         nekohtml
                         
                     </li>
@@ -8064,6 +8079,13 @@ permalink:  /report/
                         BuildRequired-By:
                         
                         classloader-leak-test-framework
+                        
+                    </li>
+                
+                    <li>
+                        BuildRequired-By:
+                        
+                        maven-native
                         
                     </li>
                 
@@ -20802,6 +20824,13 @@ permalink:  /report/
                     <li>
                         BuildRequired-By:
                         
+                        maven-native
+                        
+                    </li>
+                
+                    <li>
+                        BuildRequired-By:
+                        
                         maven-patch-plugin
                         
                     </li>
@@ -23372,6 +23401,13 @@ permalink:  /report/
                     <li>
                         Required-By:
                         
+                        native-maven-plugin
+                        
+                    </li>
+                
+                    <li>
+                        Required-By:
+                        
                         openjpa-tools
                         
                     </li>
@@ -23909,6 +23945,13 @@ permalink:  /report/
                         BuildRequired-By:
                         
                         maven-mapping
+                        
+                    </li>
+                
+                    <li>
+                        BuildRequired-By:
+                        
+                        maven-native
                         
                     </li>
                 
@@ -27661,6 +27704,17 @@ permalink:  /report/
                         
                             <em>
                         
+                        plexus-pom
+                        
+                            </em>
+                        
+                    </li>
+                
+                    <li>
+                        Required-By:
+                        
+                            <em>
+                        
                         shrinkwrap-parent
                         
                             </em>
@@ -27826,6 +27880,13 @@ permalink:  /report/
                     <li>
                         BuildRequired-By:
                         
+                        maven-native
+                        
+                    </li>
+                
+                    <li>
+                        BuildRequired-By:
+                        
                             <em>
                         
                         maven-parent
@@ -27915,6 +27976,17 @@ permalink:  /report/
                             <em>
                         
                         plexus-classworlds
+                        
+                            </em>
+                        
+                    </li>
+                
+                    <li>
+                        BuildRequired-By:
+                        
+                            <em>
+                        
+                        plexus-pom
                         
                             </em>
                         
@@ -32120,6 +32192,13 @@ permalink:  /report/
                     <li>
                         BuildRequired-By:
                         
+                        maven-native
+                        
+                    </li>
+                
+                    <li>
+                        BuildRequired-By:
+                        
                             <em>
                         
                         maven-shared-utils
@@ -32965,6 +33044,13 @@ permalink:  /report/
                         BuildRequired-By:
                         
                         maven-license-plugin
+                        
+                    </li>
+                
+                    <li>
+                        BuildRequired-By:
+                        
+                        maven-native
                         
                     </li>
                 
@@ -38191,6 +38277,13 @@ permalink:  /report/
                     <li>
                         BuildRequired-By:
                         
+                        maven-native
+                        
+                    </li>
+                
+                    <li>
+                        BuildRequired-By:
+                        
                             <em>
                         
                         maven-plugin-build-helper
@@ -39210,6 +39303,13 @@ permalink:  /report/
                     <li>
                         Required-By:
                         
+                        native-maven-plugin
+                        
+                    </li>
+                
+                    <li>
+                        Required-By:
+                        
                         rmic-maven-plugin
                         
                     </li>
@@ -39304,6 +39404,13 @@ permalink:  /report/
                         maven-javadoc-plugin
                         
                             </em>
+                        
+                    </li>
+                
+                    <li>
+                        BuildRequired-By:
+                        
+                        maven-native
                         
                     </li>
                 
@@ -41457,6 +41564,20 @@ permalink:  /report/
                     <li>
                         Required-By:
                         
+                        maven-native
+                        
+                    </li>
+                
+                    <li>
+                        Required-By:
+                        
+                        maven-native-components
+                        
+                    </li>
+                
+                    <li>
+                        Required-By:
+                        
                         maven-plugin-descriptor
                         
                     </li>
@@ -41673,6 +41794,13 @@ permalink:  /report/
                         maven-enforcer
                         
                             </em>
+                        
+                    </li>
+                
+                    <li>
+                        BuildRequired-By:
+                        
+                        maven-native
                         
                     </li>
                 
@@ -43563,6 +43691,20 @@ permalink:  /report/
                     <li>
                         Required-By:
                         
+                        maven-native
+                        
+                    </li>
+                
+                    <li>
+                        Required-By:
+                        
+                        maven-native-components
+                        
+                    </li>
+                
+                    <li>
+                        Required-By:
+                        
                         maven-patch-plugin
                         
                     </li>
@@ -43879,6 +44021,13 @@ permalink:  /report/
                         Required-By:
                         
                         mojo-executor-maven-plugin
+                        
+                    </li>
+                
+                    <li>
+                        Required-By:
+                        
+                        native-maven-plugin
                         
                     </li>
                 
@@ -44390,6 +44539,13 @@ permalink:  /report/
                         BuildRequired-By:
                         
                         maven-license-plugin
+                        
+                    </li>
+                
+                    <li>
+                        BuildRequired-By:
+                        
+                        maven-native
                         
                     </li>
                 

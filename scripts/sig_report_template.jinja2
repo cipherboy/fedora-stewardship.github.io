@@ -43,13 +43,8 @@ permalink:  /report/
 {% endif %}
 
 <h2 id="sig-leaves">
-    SIG leaf Packages (up to {{ levels }} down the dependency graph)
+    SIG leaf Packages
 </h2>
-
-<p>
-    Only packages up to {{ levels }} down the dependency graph are considered
-    to make running the report possible within a few hours, not a few <em>days</em>.
-</p>
 
 {% if sig_leaves %}
     <ul>

@@ -2,9 +2,9 @@
 
 import argparse
 import datetime
-import json
 import re
-from typing import List, Dict, Union
+import time
+from typing import List, Dict, Set, Union
 
 import jinja2
 import prettytable
@@ -13,10 +13,7 @@ import requests
 from stewardship import get_b2s_mapping, get_s2b_mapping, GetRequires, refresh_cache, get_dep_tree
 
 LRU_CACHE_SIZE = None
-MAX_DEPTH = 3
-
-PACKAGE_MAP_CACHE = "package_map.json"
-PACKAGE_DEP_CACHE = "package_dep.json"
+MAX_DEPTH = 10
 
 TEMPLATE_PATH = "sig_report_template.jinja2"
 
@@ -46,7 +43,7 @@ def main() -> int:
         help="identifier of the compose to analyze")
     parser.add_argument(
         "--maxdepth", action="store", type=int, default=MAX_DEPTH,
-        help="override maximal dependency graph traversal steps (3)")
+        help="override maximal dependency graph traversal steps (10)")
     parser.add_argument(
         "--koji", action="store_const", const=True, default=False,
         help="use koji repository directly instead of rawhide")
@@ -77,7 +74,7 @@ def main() -> int:
     members.sort()
 
     projects = ret["projects"]
-    packages = list(project["name"] for project in projects)
+    source_packages = list(project["name"] for project in projects)
 
     # populate "maintained" table
     print("Populating package table ...")
@@ -124,10 +121,44 @@ def main() -> int:
     dep_map = dict()
     depinfo = dict()
 
-    all_packages: List[str] = list()
+    # calculate list of binary packages owned by the SIG
+    binary_packages: List[str] = list()
+    for source_package in source_packages:
+        binary_packages.extend(s2b[source_package])
+
+    # iterate over all source packages to generate basic dependency graph
+    for package in source_packages:
+        binaries = s2b[package]
+
+        depended: List[Dict[str, Union[str, List[str]]]] = []
+        leaves: List[str] = []
+
+        for binary in binaries:
+            brs, reqs = get_requires(binary)
+
+            dep_map[binary] = dict()
+            dep_map[binary]["reqs"] = reqs
+            dep_map[binary]["brs"] = brs
+
+            if len(reqs + brs) == 0:
+                leaves.append(binary)
+            else:
+                depended.append({
+                    "srcname": package,
+                    "pkgname": binary,
+                    "reqs": reqs,
+                    "brs": brs
+                })
+
+        depinfo[package] = {
+            "depended": depended,
+            "leaves": leaves,
+        }
+
+    total_leaves: Set[str] = set()
 
     # iterate over all source packages
-    for package in packages:
+    for package in source_packages:
         print(" -", package)
 
         package_depended: List[Dict[str, Union[str, List[str]]]] = []
@@ -136,25 +167,23 @@ def main() -> int:
         # iterate over all built binary packages
         binaries = s2b[package]
 
-        all_deps: List[str] = []
+        all_deps: Set[str] = set()
 
         for binary in binaries:
             print("   -", binary)
 
-            all_packages.append(binary)
+            binary_packages.append(binary)
 
             # calculate dependencies from dnf metadata
             brs, reqs = get_requires(binary)
-            allrec = get_dep_tree(binary, set(), s2b, b2s, maxdepth, DEPENDENCY_BLACKLIST, repos)
-            allrec.remove(binary)
 
             # save metadata for later
             dep_map[binary] = dict()
             dep_map[binary]["reqs"] = reqs
             dep_map[binary]["brs"] = brs
-            dep_map[binary]["all-recursive"] = allrec
 
-            all_deps.extend(reqs + brs)
+            for item in reqs + brs:
+                all_deps.add(item)
 
             # check if the package isn't depended upon
             if len(reqs + brs) == 0:
@@ -169,61 +198,78 @@ def main() -> int:
 
         # check if the subpackages only depend within a source package
         if all((dep in binaries) for dep in all_deps):
-            package_leaves.append(package)
+            total_leaves.add(package)
 
         depinfo[package] = {
             "depended": package_depended,
             "leaves": package_leaves,
         }
 
-    # save results to JSON files for other uses
-    package_map_data = {
-        "compose": compose,
-        "b2s": b2s,
-        "s2b": s2b,
-    }
+    # initialize candidate list with all SIG source packages
+    candidates = source_packages.copy()
 
-    with open(PACKAGE_MAP_CACHE, "w") as file:
-        file.write(json.dumps(package_map_data, indent=2, sort_keys=True))
+    for depth in range(1, maxdepth + 1):
+        dep_tree = dict()
 
-    package_dep_data = {
-        "compose": compose,
-        "data": get_requires.cache,
-    }
+        print(f"Traversing dependency graph for {depth} edge(s).")
+        print("Currently considered SIG leaf candidates:")
+        for package in candidates:
+            print(" -", package)
+        print()
 
-    with open(PACKAGE_DEP_CACHE, "w") as file:
-        file.write(json.dumps(package_dep_data, indent=2, sort_keys=True))
+        time.sleep(5)
 
-    # generate list of "total leaf" packages
-    # (no packages at all depend on any part of them)
-    leaves: List[str] = []
+        for package in candidates:
+            print(" -", package, "(source)")
 
-    for pkg in depinfo.keys():
-        if not depinfo[pkg]["depended"]:
-            leaves.append(pkg)
+            # iterate over all built binary packages
+            binaries = s2b[package]
 
-    # generate list of "SIG leaf" packages
-    # (only packages outside of this group depend on them)
-    sig_leaves: List[str] = []
+            for binary in binaries:
+                print("   -", binary, "(binary)")
 
-    for package in packages:
-        binaries = s2b[package]
+                # calculate dependency tree from dnf metadata
+                allrec = get_dep_tree(binary, set(), s2b, b2s, depth, DEPENDENCY_BLACKLIST, repos)
 
-        # ignore dependencies on "self"
-        filtered_all_packages = all_packages.copy()
-        for binary in binaries:
-            if binary in filtered_all_packages:
-                filtered_all_packages.remove(binary)
+                # remove dependencies on "self"
+                allrec.remove(binary)
 
-        all_deps = []
+                # save metadata for later
+                dep_tree[binary] = allrec
 
-        # collect all dependencies
-        for binary in binaries:
-            all_deps.extend(dep_map[binary]["all-recursive"])
+        # generate list of "SIG leaf" packages
+        # (only packages outside of this group depend on them)
+        not_sig_leaves: Set[str] = set()
 
-        # if none of the dependents are within our package set: SIG leaf
-        if not any((dep in filtered_all_packages) for dep in all_deps):
-            sig_leaves.append(package)
+        for package in candidates:
+            binaries = s2b[package]
+
+            # ignore dependencies on "self"
+            filtered_all_packages = binary_packages.copy()
+            for binary in binaries:
+                if binary in filtered_all_packages:
+                    filtered_all_packages.remove(binary)
+
+            # collect all dependencies
+            all_deps = set()
+            for binary in binaries:
+                for dep in dep_tree[binary]:
+                    all_deps.add(dep)
+
+            # check if any dependencies are SIG binary packages
+            for dep in all_deps:
+                if dep in filtered_all_packages:
+                    not_sig_leaves.add(package)
+
+        print()
+
+        print(f"Traversed dependency graph for {depth} edge(s).")
+        for package in not_sig_leaves:
+            print(f" - {package} is not a SIG leaf")
+            candidates.remove(package)
+        print()
+
+    sig_leaves = candidates.copy()
 
     # render output
     print("Rendering output ...")
@@ -238,9 +284,9 @@ def main() -> int:
         num_maintained=num_maintained,
         table=maintained.get_html_string(),
         depinfo=depinfo,
-        leaves=leaves,
+        leaves=total_leaves,
         sig_leaves=sig_leaves,
-        all_packages=all_packages,
+        all_packages=binary_packages,
         compose=compose,
         levels=maxdepth,
     )
