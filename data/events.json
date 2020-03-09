@@ -15244,5 +15244,11 @@
     "event": "removed",
     "date": "2020-03-04",
     "version": null
+  },
+  {
+    "package": "opentest4j",
+    "event": "updated",
+    "date": "2020-03-09",
+    "version": "1.2.0"
   }
 ]
