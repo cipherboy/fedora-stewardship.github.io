@@ -29,8 +29,3 @@ permalink:  /pr-report/
 
 - [#3: update to version 3.2.1](https://src.fedoraproject.org/rpms/maven-source-plugin/pull-request/3)
 
-
-## opentest4j
-
-- [#1: update to version 1.2.0](https://src.fedoraproject.org/rpms/opentest4j/pull-request/1)
-
