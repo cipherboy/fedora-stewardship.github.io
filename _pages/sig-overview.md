@@ -14,8 +14,8 @@ permalink:  /overview/
 
 | package | last updated | last release | status |
 | ------- | ------------ | ------------ | ------ |
-| ant | 1.10.6 | 1.10.7 | 192 days behind |
-| ant-antunit | 1.3 | 1.4 | 628 days behind |
+| ant | 1.10.6 | 1.10.7 | 193 days behind |
+| ant-antunit | 1.3 | 1.4 | 629 days behind |
 | ant-contrib | 1.0~beta3 | 1.0~beta3 | current |
 | antlr | 2.7.7 | 2.7.7 | current |
 | aopalliance | 1.0 | 1.0 | current |
@@ -26,14 +26,14 @@ permalink:  /overview/
 | apache-commons-daemon | 1.2.2 | 1.2.2 | current |
 | apache-commons-jxpath | 1.3 | 1.3 | current |
 | apache-commons-lang | 2.6 | 2.6 | current |
-| apache-commons-vfs | 2.4.1 | 2.6.0 | 77 days behind |
-| apache-ivy | 2.4.0 | 2.5.0 | 143 days behind |
+| apache-commons-vfs | 2.4.1 | 2.6.0 | 78 days behind |
+| apache-ivy | 2.4.0 | 2.5.0 | 144 days behind |
 | apache-parent | 23 | 23 | current |
 | apache-resource-bundles | 2 | 2 | current |
 | apiguardian | 1.1.0 | 1.1.0 | current |
-| aqute-bnd | 3.5.0 | 5.0.0 | 670 days behind |
+| aqute-bnd | 3.5.0 | 5.0.0 | 671 days behind |
 | args4j | 2.33 | 2.33 | current |
-| assertj-core | 3.8.0 | 3.15.0 | 799 days behind |
+| assertj-core | 3.8.0 | 3.15.0 | 800 days behind |
 | atinject | 1 | 1 | current |
 | bcel | 6.4.1 | 6.4.1 | current |
 | bea-stax | 1.2.0 | 1.2.0 | current |
@@ -41,18 +41,18 @@ permalink:  /overview/
 | bsf | 2.4.0 | 2.4.0 | current |
 | bsh | 2.0~beta6 | 2.0~beta6 | current |
 | cal10n | 0.8.1 | 0.8.1 | current |
-| cdi-api | 1.2 | 2.0.0 | 1037 days behind |
+| cdi-api | 1.2 | 2.0.0 | 1038 days behind |
 | codemodel | 2.6 | 2.6 | current |
 | dain-snappy | 0.4 | 0.4 | current |
-| disruptor | 3.3.6 | 3.4.2 | 895 days behind |
-| easymock | 3.6 | 4.2 | 501 days behind |
+| disruptor | 3.3.6 | 3.4.2 | 896 days behind |
+| easymock | 3.6 | 4.2 | 502 days behind |
 | exec-maven-plugin | 1.6.0 | 1.6.0 | current |
 | fasterxml-oss-parent | 38 | 38 | current |
 | felix-bundlerepository | 2.0.10 | 2.0.10 | current |
-| felix-framework | 5.6.0 | 6.0.3 | 1237 days behind |
+| felix-framework | 5.6.0 | 6.0.3 | 1238 days behind |
 | felix-osgi-obr | 1.0.2 | 1.0.2 | current |
-| felix-osgi-obr-resolver | 1.8.0 | 2.0.0 | 1266 days behind |
-| felix-parent | 4 | 6 | 692 days behind |
+| felix-osgi-obr-resolver | 1.8.0 | 2.0.0 | 1267 days behind |
+| felix-parent | 4 | 6 | 693 days behind |
 | felix-shell | 1.4.3 | 1.4.3 | current |
 | felix-utils | 1.11.4 | 1.11.4 | current |
 | fusesource-pom | 1.12 | 1.12 | current |
@@ -60,83 +60,83 @@ permalink:  /overview/
 | geronimo-jpa | 1.1.1 | 1.1.1 | current |
 | geronimo-parent-poms | 1.6 | 1.6 | current |
 | glassfish-annotation-api | 1.3.2 | 1.3.2 | current |
-| glassfish-dtd-parser | 1.4 | 1.4.2 | 439 days behind |
-| glassfish-fastinfoset | 1.2.15 | 1.2.17 | 440 days behind |
-| glassfish-hk2 | 2.5.0 | 2.6.1 | 224 days behind |
+| glassfish-dtd-parser | 1.4 | 1.4.2 | 440 days behind |
+| glassfish-fastinfoset | 1.2.15 | 1.2.17 | 441 days behind |
+| glassfish-hk2 | 2.5.0 | 2.6.1 | 225 days behind |
 | glassfish-jax-rs-api | 2.1.6 | 2.1.6 | current |
-| glassfish-jaxb | 2.2.11 | 2.3.2 | 952 days behind |
-| glassfish-jaxb-api | 2.2.12~b141001.1542 | 2.3.1 | 1969 days behind |
+| glassfish-jaxb | 2.2.11 | 2.3.2 | 953 days behind |
+| glassfish-jaxb-api | 2.2.12~b141001.1542 | 2.3.1 | 1970 days behind |
 | glassfish-jsp-api | 2.3.3 | 2.3.3 | current |
 | glassfish-legal | 1.1 | 1.1 | current |
 | glassfish-master-pom | 8 | 8 | current |
 | google-gson | 2.8.6 | 2.8.6 | current |
 | google-guice | 4.2.2 | 4.2.2 | current |
-| guava | 25.0 | 28.2 | 658 days behind |
+| guava | 25.0 | 28.2 | 659 days behind |
 | guava20 | 20.0 | 20.0 | current |
-| hamcrest | 1.3 | 2.2 | 447 days behind |
+| hamcrest | 1.3 | 2.2 | 448 days behind |
 | hawtjni | 1.17 | 1.17 | current |
 | httpcomponents-project | 11 | 11 | current |
 | isorelax | 0 | 0 | current |
-| istack-commons | 2.21 | 3.0.10 | 1738 days behind |
-| jackson-annotations | 2.10.3 | 2.20.3 | 8 days behind |
-| jackson-core | 2.10.3 | 2.20.3 | 8 days behind |
-| jackson-databind | 2.10.3 | 2.20.3 | 8 days behind |
-| jackson-jaxrs-providers | 2.10.3 | 2.20.3 | 8 days behind |
-| jackson-modules-base | 2.10.3 | 2.20.3 | 8 days behind |
+| istack-commons | 2.21 | 3.0.10 | 1739 days behind |
+| jackson-annotations | 2.10.3 | 2.20.3 | 9 days behind |
+| jackson-core | 2.10.3 | 2.20.3 | 9 days behind |
+| jackson-databind | 2.10.3 | 2.20.3 | 9 days behind |
+| jackson-jaxrs-providers | 2.10.3 | 2.20.3 | 9 days behind |
+| jackson-modules-base | 2.10.3 | 2.20.3 | 9 days behind |
 | jackson-parent | 2.10 | 2.10 | current |
 | jakarta-commons-httpclient | 3.1 | 3.1 | current |
-| janino | 2.7.8 | 3.1.0 | 1343 days behind |
+| janino | 2.7.8 | 3.1.0 | 1344 days behind |
 | jansi | 1.18 | 1.18 | current |
 | jansi-native | 1.8 | 1.8 | current |
 | java_cup | 0.11~beta | 0.11~beta | current |
-| javacc | 7.0.4 | 7.0.5 | 143 days behind |
+| javacc | 7.0.4 | 7.0.5 | 144 days behind |
 | javacc-maven-plugin | 2.6 | 2.6 | current |
-| javaparser | 3.3.5 | 3.15.11 | 906 days behind |
-| javassist | 3.18.1 | 3.26.0 | 2115 days behind |
+| javaparser | 3.3.5 | 3.15.11 | 907 days behind |
+| javassist | 3.18.1 | 3.26.0 | 2116 days behind |
 | jaxen | 1.2.0 | 1.2.0 | current |
 | jboss-annotations-1.2-api | 1.0.2 | 1.0.2 | current |
-| jboss-el-2.2-api | 1.0.5 | 1.0.6 | 1442 days behind |
-| jboss-el-3.0-api | 1.0.13 | 2.0.0 | 182 days behind |
-| jboss-interceptors-1.2-api | 1.0.1 | 2.0.0 | 183 days behind |
-| jboss-jaxrs-2.0-api | 1.0.0 | 1.0.1 | 779 days behind |
+| jboss-el-2.2-api | 1.0.5 | 1.0.6 | 1443 days behind |
+| jboss-el-3.0-api | 1.0.13 | 2.0.0 | 183 days behind |
+| jboss-interceptors-1.2-api | 1.0.1 | 2.0.0 | 184 days behind |
+| jboss-jaxrs-2.0-api | 1.0.0 | 1.0.1 | 780 days behind |
 | jboss-logging | 3.4.1 | 3.4.1 | current |
-| jboss-logging-tools | 2.2.0 | 2.2.1 | 111 days behind |
-| jboss-modules | 1.5.2 | 1.9.2 | 1079 days behind |
+| jboss-logging-tools | 2.2.0 | 2.2.1 | 112 days behind |
+| jboss-modules | 1.5.2 | 1.9.2 | 1080 days behind |
 | jboss-servlet-3.0-api | 1.0.2 | 1.0.2 | current |
 | jboss-servlet-3.1-api | 1.0.2 | 1.0.2 | current |
-| jctools | 2.1.2 | 3.0.0 | 68 days behind |
+| jctools | 2.1.2 | 3.0.0 | 69 days behind |
 | jdeparser | 2.0.3 | 2.0.3 | current |
 | jdepend | 2.9.1 | 2.9.1 | current |
-| jdependency | 1.2 | 2.3.0 | 799 days behind |
+| jdependency | 1.2 | 2.3.0 | 800 days behind |
 | jdom2 | 2.0.6 | 2.0.6 | current |
-| jetty-parent | 19 | 25 | 2760 days behind |
-| jetty-toolchain | 1.4 | 1.7 | 1836 days behind |
-| jflex | 1.7.0 | 1.8.0 | 12 days behind |
-| jmock | 2.8.2 | 2.12.0 | 1000 days behind |
-| jna | 5.4.0 | 5.5.0 | 133 days behind |
-| joda-convert | 1.9.2 | 2.2.1 | 755 days behind |
-| jsoup | 1.12.1 | 1.13.1 | 31 days behind |
-| junit | 4.12 | 4.13 | 70 days behind |
+| jetty-parent | 19 | 25 | 2761 days behind |
+| jetty-toolchain | 1.4 | 1.7 | 1837 days behind |
+| jflex | 1.7.0 | 1.8.0 | 13 days behind |
+| jmock | 2.8.2 | 2.12.0 | 1001 days behind |
+| jna | 5.4.0 | 5.5.0 | 134 days behind |
+| joda-convert | 1.9.2 | 2.2.1 | 756 days behind |
+| jsoup | 1.12.1 | 1.13.1 | 32 days behind |
+| junit | 4.12 | 4.13 | 71 days behind |
 | junit5 | 5.6.0 | 5.6.0 | current |
 | jvnet-parent | 5 | 5 | current |
 | kxml | 2.3.0 | 2.3.0 | current |
 | log4j | 2.13.1 | 2.13.1 | current |
 | log4j12 | 1.2.17 | 1.2.17 | current |
-| maven | 3.6.1 | 3.6.3 | 197 days behind |
+| maven | 3.6.1 | 3.6.3 | 198 days behind |
 | maven-antrun-plugin | 1.8 | 1.8 | current |
 | maven-archiver | 3.5.0 | 3.5.0 | current |
 | maven-artifact-resolver | 1.0 | 1.0 | current |
-| maven-artifact-transfer | 0.11.0 | 0.12.0 | 106 days behind |
+| maven-artifact-transfer | 0.11.0 | 0.12.0 | 107 days behind |
 | maven-assembly-plugin | 3.2.0 | 3.2.0 | current |
 | maven-clean-plugin | 3.1.0 | 3.1.0 | current |
-| maven-common-artifact-filters | 3.0.1 | 3.1.0 | 452 days behind |
+| maven-common-artifact-filters | 3.0.1 | 3.1.0 | 453 days behind |
 | maven-compiler-plugin | 3.8.1 | 3.8.1 | current |
 | maven-dependency-analyzer | 1.11.1 | 1.11.1 | current |
 | maven-dependency-plugin | 3.1.1 | 3.1.1 | current |
 | maven-dependency-tree | 3.0.1 | 3.0.1 | current |
 | maven-doxia | 1.9 | 1.9 | current |
-| maven-doxia-sitetools | 1.9.1 | 1.9.2 | 21 days behind |
-| maven-enforcer | 3.0.0~M2 | 3.0.0~M3 | 114 days behind |
+| maven-doxia-sitetools | 1.9.1 | 1.9.2 | 22 days behind |
+| maven-enforcer | 3.0.0~M2 | 3.0.0~M3 | 115 days behind |
 | maven-file-management | 3.0.0 | 3.0.0 | current |
 | maven-filtering | 3.1.1 | 3.1.1 | current |
 | maven-install-plugin | 2.5.2 | 2.5.2 | current |
@@ -145,12 +145,12 @@ permalink:  /overview/
 | maven-jar-plugin | 3.2.0 | 3.2.0 | current |
 | maven-javadoc-plugin | 3.1.1 | 3.1.1 | current |
 | maven-osgi | 0.2.0 | 0.2.0 | current |
-| maven-parent | 33 | 34 | 45 days behind |
-| maven-plugin-build-helper | 1.9.1 | 3.0.0 | 1572 days behind |
-| maven-plugin-bundle | 3.5.1 | 4.2.1 | 561 days behind |
+| maven-parent | 33 | 34 | 46 days behind |
+| maven-plugin-build-helper | 1.9.1 | 3.0.0 | 1573 days behind |
+| maven-plugin-bundle | 3.5.1 | 4.2.1 | 562 days behind |
 | maven-plugin-testing | 3.3.0 | 3.3.0 | current |
-| maven-plugin-tools | 3.5.1 | 3.6.0 | 661 days behind |
-| maven-remote-resources-plugin | 1.5 | 1.7.0 | 500 days behind |
+| maven-plugin-tools | 3.5.1 | 3.6.0 | 662 days behind |
+| maven-remote-resources-plugin | 1.5 | 1.7.0 | 501 days behind |
 | maven-reporting-api | 3.0 | 3.0 | current |
 | maven-reporting-impl | 3.0.0 | 3.0.0 | current |
 | maven-resolver | 1.4.1 | 1.4.1 | current |
@@ -160,12 +160,12 @@ permalink:  /overview/
 | maven-shared-incremental | 1.1 | 1.1 | current |
 | maven-shared-io | 3.0.0 | 3.0.0 | current |
 | maven-shared-utils | 3.2.1 | 3.2.1 | current |
-| maven-source-plugin | 3.2.0 | 3.2.1 | 86 days behind |
-| maven-surefire | 2.22.0 | 3.0.0~M4 | 521 days behind |
+| maven-source-plugin | 3.2.0 | 3.2.1 | 87 days behind |
+| maven-surefire | 2.22.0 | 3.0.0~M4 | 522 days behind |
 | maven-verifier | 1.6 | 1.6 | current |
-| maven-wagon | 3.2.0 | 3.3.4 | 433 days behind |
-| modello | 1.10.0 | 1.11 | 275 days behind |
-| mojo-parent | 40 | 50 | 472 days behind |
+| maven-wagon | 3.2.0 | 3.3.4 | 434 days behind |
+| modello | 1.10.0 | 1.11 | 276 days behind |
+| mojo-parent | 40 | 50 | 473 days behind |
 | munge-maven-plugin | 1.0 | 1.0 | current |
 | objectweb-pom | 1.5 | 1.5 | current |
 | opentest4j | 1.2.0 | 1.2.0 | current |
@@ -174,7 +174,7 @@ permalink:  /overview/
 | paranamer | 2.8 | 2.8 | current |
 | plexus-ant-factory | 1.0~alpha2.1 | 1.0~alpha2.1 | current |
 | plexus-archiver | 4.2.2 | 4.2.2 | current |
-| plexus-bsh-factory | 1.0~alpha7 | 1.0~alpha9 | 4854 days behind |
+| plexus-bsh-factory | 1.0~alpha7 | 1.0~alpha9 | 4855 days behind |
 | plexus-build-api | 0.0.7 | 0.0.7 | current |
 | plexus-cipher | 1.7 | 1.7 | current |
 | plexus-classworlds | 2.6.0 | 2.6.0 | current |
@@ -197,28 +197,28 @@ permalink:  /overview/
 | relaxngDatatype | 2011.1 | 2011.1 | current |
 | relaxngcc | 1.12 | 1.12 | current |
 | replacer | 1.6.0 | 1.6.0 | current |
-| resteasy | 3.0.26 | 4.4.2 | 1184 days behind |
+| resteasy | 3.0.26 | 4.4.2 | 1185 days behind |
 | shrinkwrap | 1.2.6 | 1.2.6 | current |
 | simple-xml | 2.7.1 | 2.7.1 | current |
 | sisu | 0.3.4 | 0.3.4 | current |
 | sisu-mojos | 0.3.4 | 0.3.4 | current |
 | slf4j | 1.7.30 | 1.7.30 | current |
 | snakeyaml | 1.25 | 1.25 | current |
-| snappy-java | 1.1.2.4 | 1.1.7.3 | 1378 days behind |
+| snappy-java | 1.1.2.4 | 1.1.7.3 | 1379 days behind |
 | sonatype-oss-parent | 7 | 7 | current |
-| spec-version-maven-plugin | 1.2 | 2.1 | 562 days behind |
+| spec-version-maven-plugin | 1.2 | 2.1 | 563 days behind |
 | spice-parent | 26 | 26 | current |
-| stax-ex | 1.7.7 | 1.8.2 | 1153 days behind |
+| stax-ex | 1.7.7 | 1.8.2 | 1154 days behind |
 | stax2-api | 4.2 | 4.2 | current |
-| testng | 6.14.3 | 7.1.0 | 207 days behind |
+| testng | 6.14.3 | 7.1.0 | 208 days behind |
 | univocity-output-tester | 2.1 | 2.1 | current |
 | univocity-parsers | 2.8.4 | 2.8.4 | current |
 | velocity | 1.7 | 1.7 | current |
 | weld-parent | 40 | 40 | current |
 | woodstox-core | 6.1.1 | 6.1.1 | current |
 | xalan-j2 | 2.7.2 | 2.7.2 | current |
-| xbean | 4.15 | 4.16 | 40 days behind |
-| xmlstreambuffer | 1.5.4 | 1.5.8 | 630 days behind |
+| xbean | 4.15 | 4.16 | 41 days behind |
+| xmlstreambuffer | 1.5.4 | 1.5.8 | 631 days behind |
 | xmvn | 3.1.0 | 3.1.0 | current |
 | xsom | 20140514 | 20140514 | current |
 | xstream | 1.4.11.1 | 1.4.11.1 | current |
