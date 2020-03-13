@@ -15093,37 +15093,37 @@
     "package": "jackson-bom",
     "event": "released",
     "date": "2020-03-03",
-    "version": "2.20.3"
+    "version": "2.10.3"
   },
   {
     "package": "jackson-annotations",
     "event": "released",
     "date": "2020-03-03",
-    "version": "2.20.3"
+    "version": "2.10.3"
   },
   {
     "package": "jackson-core",
     "event": "released",
     "date": "2020-03-03",
-    "version": "2.20.3"
+    "version": "2.10.3"
   },
   {
     "package": "jackson-databind",
     "event": "released",
     "date": "2020-03-03",
-    "version": "2.20.3"
+    "version": "2.10.3"
   },
   {
     "package": "jackson-jaxrs-providers",
     "event": "released",
     "date": "2020-03-03",
-    "version": "2.20.3"
+    "version": "2.10.3"
   },
   {
     "package": "jackson-modules-base",
     "event": "released",
     "date": "2020-03-03",
-    "version": "2.20.3"
+    "version": "2.10.3"
   },
   {
     "package": "plexus-archiver",
