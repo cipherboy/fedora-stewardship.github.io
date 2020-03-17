@@ -15250,5 +15250,23 @@
     "event": "updated",
     "date": "2020-03-09",
     "version": "1.2.0"
+  },
+  {
+    "package": "ant-antunit",
+    "event": "removed",
+    "date": "2020-03-17",
+    "version": null
+  },
+  {
+    "package": "jetty-toolchain",
+    "event": "removed",
+    "date": "2020-03-17",
+    "version": null
+  },
+  {
+    "package": "simple-xml",
+    "event": "removed",
+    "date": "2020-03-17",
+    "version": null
   }
 ]
