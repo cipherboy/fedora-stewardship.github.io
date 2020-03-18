@@ -15268,5 +15268,17 @@
     "event": "removed",
     "date": "2020-03-17",
     "version": null
+  },
+  {
+    "package": "maven-parent",
+    "event": "updated",
+    "date": "2020-03-18",
+    "version": "34"
+  },
+  {
+    "package": "maven-source-plugin",
+    "event": "updated",
+    "date": "2020-03-18",
+    "version": "3.2.1"
   }
 ]
