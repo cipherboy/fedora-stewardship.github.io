@@ -15280,5 +15280,11 @@
     "event": "updated",
     "date": "2020-03-18",
     "version": "3.2.1"
+  },
+  {
+    "package": "javassist",
+    "event": "released",
+    "date": "2020-03-19",
+    "version": "3.27.0"
   }
 ]
