@@ -159,7 +159,7 @@ def main() -> int:
         print()
 
         print(f"Traversed dependency graph for {depth} edge(s).")
-        for package in not_sig_leaves:
+        for package in sorted(not_sig_leaves):
             print(f" - {package} is not a SIG leaf")
             candidates.remove(package)
         print()
