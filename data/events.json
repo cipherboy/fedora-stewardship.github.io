@@ -15292,5 +15292,11 @@
     "event": "released",
     "date": "2020-03-19",
     "version": "3.27.0"
+  },
+  {
+    "package": "maven-doxia-sitetools",
+    "event": "updated",
+    "date": "2020-03-21",
+    "version": "1.9.2"
   }
 ]
