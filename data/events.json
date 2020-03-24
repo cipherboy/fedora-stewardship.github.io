@@ -15294,9 +15294,27 @@
     "version": "3.27.0"
   },
   {
+    "package": "xmlstreambuffer",
+    "event": "released",
+    "date": "2020-03-20",
+    "version": "1.5.9"
+  },
+  {
+    "package": "glassfish-fastinfoset",
+    "event": "released",
+    "date": "2020-03-20",
+    "version": "1.2.18"
+  },
+  {
     "package": "maven-doxia-sitetools",
     "event": "updated",
     "date": "2020-03-21",
     "version": "1.9.2"
+  },
+  {
+    "package": "junit5",
+    "event": "released",
+    "date": "2020-03-22",
+    "version": "5.6.1"
   }
 ]
