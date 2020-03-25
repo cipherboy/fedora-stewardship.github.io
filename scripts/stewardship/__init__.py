@@ -46,8 +46,11 @@ def is_blacklisted(package: str, blacklist) -> bool:
 
 
 def parse_nevra(nevra: str) -> Tuple[str, str, str, str, str]:
-    nevr, a = nevra.rsplit(".", 1)
-    n, ev, r = nevr.rsplit("-", 2)
+    try:
+        nevr, a = nevra.rsplit(".", 1)
+        n, ev, r = nevr.rsplit("-", 2)
+    except ValueError:
+        raise ValueError(f"Invalid nevra: {nevra}")
 
     if ":" in ev:
         e, v = ev.split(":")

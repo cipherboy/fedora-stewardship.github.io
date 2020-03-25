@@ -63,14 +63,15 @@ def retry(fun, *args, _retry_msg=None, _retry_times=None, _retry_delay=0, **kwar
         except KeyboardInterrupt:
             print("Cancelling upon user request.")
             raise
-        except:
+        except BaseException as e:
+            exception = e
             tries += 1
             if _retry_msg is not None:
                 print(_retry_msg)
             if _retry_delay != 0:
                 time.sleep(_retry_delay)
 
-    raise RetryError("Tried {} times, but failed.".format(_retry_times))
+    raise RetryError("Tried {} times, but failed.".format(_retry_times)) from exception
 
 
 def copr_repo_exists(copr: str) -> bool:
@@ -242,12 +243,12 @@ def build_package(copr: str, package: str, wait: bool = False):
              "--repo=rawhide", "--repo=rawhide-source",
              "download", "--source", package],
             stdout=sp.PIPE,
-            stderr=sp.STDOUT)
+            stderr=sp.PIPE)
 
         try:
             result.check_returncode()
         except sp.CalledProcessError:
-            print(result.stdout.decode())
+            print(result.stderr.decode())
             raise
 
     try:
@@ -416,12 +417,12 @@ def get_all_dependents(
     cmd.extend(["--whatrequires", package])
 
     def query():
-        ret = sp.run(cmd, stdout=sp.PIPE, stderr=sp.STDOUT)
+        ret = sp.run(cmd, stdout=sp.PIPE, stderr=sp.PIPE)
 
         try:
             ret.check_returncode()
         except sp.CalledProcessError:
-            print(ret.stdout.decode())
+            print(ret.stderr.decode())
             raise
 
         deps: List[str] = ret.stdout.decode().splitlines()
