@@ -14844,6 +14844,12 @@
     "version": "1.12.2"
   },
   {
+    "package": "javaparser",
+    "event": "released",
+    "date": "2020-02-09",
+    "version": "3.15.12"
+  },
+  {
     "package": "weld-parent",
     "event": "released",
     "date": "2020-02-11",
@@ -14982,6 +14988,12 @@
     "version": "1.8.0"
   },
   {
+    "package": "javaparser",
+    "event": "released",
+    "date": "2020-02-23",
+    "version": "3.15.13"
+  },
+  {
     "package": "aalto-xml",
     "event": "removed",
     "date": "2020-02-26",
@@ -15076,6 +15088,12 @@
     "event": "released",
     "date": "2020-03-01",
     "version": "1.13.1"
+  },
+  {
+    "package": "javaparser",
+    "event": "released",
+    "date": "2020-03-01",
+    "version": "3.15.14"
   },
   {
     "package": "auto",
@@ -15252,6 +15270,12 @@
     "version": "1.2.0"
   },
   {
+    "package": "janino",
+    "event": "released",
+    "date": "2020-03-09",
+    "version": "3.1.1"
+  },
+  {
     "package": "maven-javadoc-plugin",
     "event": "released",
     "date": "2020-03-12",
@@ -15294,6 +15318,18 @@
     "version": "3.2.1"
   },
   {
+    "package": "janino",
+    "event": "released",
+    "date": "2020-03-18",
+    "version": "3.1.2"
+  },
+  {
+    "package": "javaparser",
+    "event": "released",
+    "date": "2020-03-18",
+    "version": "3.15.15"
+  },
+  {
     "package": "javassist",
     "event": "released",
     "date": "2020-03-19",
@@ -15324,6 +15360,12 @@
     "version": "5.6.1"
   },
   {
+    "package": "javaparser",
+    "event": "released",
+    "date": "2020-03-24",
+    "version": "3.15.17"
+  },
+  {
     "package": "javassist",
     "event": "updated",
     "date": "2020-03-26",
@@ -15334,5 +15376,11 @@
     "event": "updated",
     "date": "2020-03-27",
     "version": "3.6.0"
+  },
+  {
+    "package": "maven-verifier",
+    "event": "released",
+    "date": "2020-03-27",
+    "version": "1.7.0"
   }
 ]
