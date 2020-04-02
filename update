@@ -75,6 +75,8 @@ def main():
     commit_msg = f"{datetime.datetime.utcnow().strftime('%Y-%m-%d')} (rawhide:{compose})"
     subprocess.run(["git", "commit", "-a", "-m", commit_msg])
 
+    subprocess.run(["git", "push"])
+
     return 0
 
 
