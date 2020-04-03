@@ -15382,5 +15382,23 @@
     "event": "released",
     "date": "2020-03-27",
     "version": "1.7.0"
+  },
+  {
+    "package": "guava20",
+    "event": "removed",
+    "date": "2020-04-03",
+    "version": null
+  },
+  {
+    "package": "jetty-parent",
+    "event": "removed",
+    "date": "2020-04-03",
+    "version": null
+  },
+  {
+    "package": "plexus-bsh-factory",
+    "event": "removed",
+    "date": "2020-04-03",
+    "version": null
   }
 ]
