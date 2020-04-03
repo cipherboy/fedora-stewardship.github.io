@@ -71,7 +71,6 @@ permalink:  /overview/
 | google-gson | 2.8.6 | 2.8.6 | current |
 | google-guice | 4.2.2 | 4.2.2 | current |
 | guava | 25.0 | 28.2 | 681 days behind |
-| guava20 | 20.0 | 20.0 | current |
 | hamcrest | 1.3 | 2.2 | 470 days behind |
 | hawtjni | 1.17 | 1.17 | current |
 | httpcomponents-project | 11 | 11 | current |
@@ -108,7 +107,6 @@ permalink:  /overview/
 | jdepend | 2.9.1 | 2.9.1 | current |
 | jdependency | 1.2 | 2.3.0 | 822 days behind |
 | jdom2 | 2.0.6 | 2.0.6 | current |
-| jetty-parent | 19 | 25 | 2783 days behind |
 | jflex | 1.7.0 | 1.8.0 | 35 days behind |
 | jmock | 2.8.2 | 2.12.0 | 1023 days behind |
 | jna | 5.4.0 | 5.5.0 | 156 days behind |
@@ -172,7 +170,6 @@ permalink:  /overview/
 | paranamer | 2.8 | 2.8 | current |
 | plexus-ant-factory | 1.0~alpha2.1 | 1.0~alpha2.1 | current |
 | plexus-archiver | 4.2.2 | 4.2.2 | current |
-| plexus-bsh-factory | 1.0~alpha7 | 1.0~alpha9 | 4877 days behind |
 | plexus-build-api | 0.0.7 | 0.0.7 | current |
 | plexus-cipher | 1.7 | 1.7 | current |
 | plexus-classworlds | 2.6.0 | 2.6.0 | current |

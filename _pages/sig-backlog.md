@@ -4,7 +4,7 @@ layout:     page
 permalink:  /backlog/
 ---
 
-60 of 206 out of date (29%)
+58 of 203 out of date (29%)
 
 
 
@@ -729,20 +729,6 @@ permalink:  /backlog/
 
 
 
-## jetty-parent
-- Last release: 25
-- Last updated: 19
-
-### Update backlog:
-
-
-- 20 (2783 days ago)
-- 21 (2296 days ago)
-- 22 (2194 days ago)
-- 23 (2031 days ago)
-- 24 (1834 days ago)
-- 25 (1787 days ago)
-
 
 
 
@@ -1110,16 +1096,6 @@ permalink:  /backlog/
 
 
 
-
-## plexus-bsh-factory
-- Last release: 1.0~alpha9
-- Last updated: 1.0~alpha7
-
-### Update backlog:
-
-
-- 1.0~alpha8 (4877 days ago)
-- 1.0~alpha9 (4314 days ago)
 
 
 
