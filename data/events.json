@@ -15400,5 +15400,17 @@
     "event": "removed",
     "date": "2020-04-03",
     "version": null
+  },
+  {
+    "package": "maven-verifier",
+    "event": "released",
+    "date": "2020-04-03",
+    "version": "1.7.1"
+  },
+  {
+    "package": "javaparser",
+    "event": "released",
+    "date": "2020-04-06",
+    "version": "3.15.17"
   }
 ]
