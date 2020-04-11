@@ -165,7 +165,7 @@ def main() -> int:
         print()
 
     # print non-SIG-leaf packages
-    for key, values in causes.items():
+    for key, values in sorted(causes.items()):
         print(f" - {key} is required by:")
         for package in sorted(values):
             print(f"   - {package}")
