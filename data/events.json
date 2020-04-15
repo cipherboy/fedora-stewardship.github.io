@@ -14856,6 +14856,12 @@
     "version": "40"
   },
   {
+    "package": "maven-shade-plugin",
+    "event": "released",
+    "date": "2020-02-12",
+    "version": "3.2.2"
+  },
+  {
     "package": "apache-commons-jexl",
     "event": "removed",
     "date": "2020-02-13",
@@ -15076,6 +15082,12 @@
     "event": "released",
     "date": "2020-02-28",
     "version": "1.8.0"
+  },
+  {
+    "package": "snakeyaml",
+    "event": "released",
+    "date": "2020-02-28",
+    "version": "1.26"
   },
   {
     "package": "plexus-archiver",
@@ -15412,5 +15424,35 @@
     "event": "released",
     "date": "2020-04-06",
     "version": "3.15.17"
+  },
+  {
+    "package": "junit5",
+    "event": "released",
+    "date": "2020-04-10",
+    "version": "5.6.2"
+  },
+  {
+    "package": "xstream",
+    "event": "released",
+    "date": "2020-04-12",
+    "version": "1.4.12"
+  },
+  {
+    "package": "maven-antrun-plugin",
+    "event": "released",
+    "date": "2020-04-12",
+    "version": "3.0.0"
+  },
+  {
+    "package": "guava",
+    "event": "released",
+    "date": "2020-04-13",
+    "version": "29.0"
+  },
+  {
+    "package": "maven-shade-plugin",
+    "event": "released",
+    "date": "2020-04-14",
+    "version": "3.2.3"
   }
 ]
