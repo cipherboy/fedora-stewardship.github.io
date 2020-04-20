@@ -15454,5 +15454,11 @@
     "event": "released",
     "date": "2020-04-14",
     "version": "3.2.3"
+  },
+  {
+    "package": "felix-parent",
+    "event": "released",
+    "date": "2020-04-15",
+    "version": "7"
   }
 ]
