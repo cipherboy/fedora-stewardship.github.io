@@ -435,19 +435,20 @@ permalink:  /backlog/
 
 
 ## javacc
-- Last release: 7.0.5
+- Last release: 7.0.6
 - Last updated: 7.0.4
 
 ### Update backlog:
 
 
 - 7.0.5 (187 days ago)
+- 7.0.6 (1 days ago)
 
 
 
 
 ## javaparser
-- Last release: 3.15.17
+- Last release: 3.15.21
 - Last updated: 3.3.5
 
 ### Update backlog:
@@ -560,7 +561,9 @@ permalink:  /backlog/
 - 3.15.13 (61 days ago)
 - 3.15.14 (54 days ago)
 - 3.15.15 (37 days ago)
-- 3.15.17 (18 days ago)
+- 3.15.17 (31 days ago)
+- 3.15.18 (18 days ago)
+- 3.15.21 (1 days ago)
 
 
 

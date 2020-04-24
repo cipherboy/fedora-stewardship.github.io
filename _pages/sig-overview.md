@@ -87,9 +87,9 @@ permalink:  /overview/
 | jansi | 1.18 | 1.18 | current |
 | jansi-native | 1.8 | 1.8 | current |
 | java_cup | 0.11~beta | 0.11~beta | current |
-| javacc | 7.0.4 | 7.0.5 | 187 days behind |
+| javacc | 7.0.4 | 7.0.6 | 187 days behind |
 | javacc-maven-plugin | 2.6 | 2.6 | current |
-| javaparser | 3.3.5 | 3.15.17 | 950 days behind |
+| javaparser | 3.3.5 | 3.15.21 | 950 days behind |
 | javassist | 3.21.0 | 3.27.0 | 927 days behind |
 | jaxen | 1.2.0 | 1.2.0 | current |
 | jboss-annotations-1.2-api | 1.0.2 | 1.0.2 | current |

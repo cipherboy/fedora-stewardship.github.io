@@ -31,7 +31,7 @@ permalink:  /report/
 {% if leaves %}
     <ul>
         {% for package in leaves %}
-            <li>{{ package }}</li>
+            <li><a href="https://src.fedoraproject.org/rpms/{{ package }}">{{ package }}</a></li>
         {% endfor %}
     </ul>
 {% else %}
@@ -49,7 +49,7 @@ permalink:  /report/
 {% if sig_leaves %}
     <ul>
         {% for package in sig_leaves %}
-            <li>{{ package }}</li>
+            <li><a href="https://src.fedoraproject.org/rpms/{{ package }}">{{ package }}</a></li>
         {% endfor %}
     </ul>
 {% else %}
@@ -67,7 +67,7 @@ permalink:  /report/
 {% for name, package in depinfo.items() %}
 
     <h3 id="{{name}}-deps">
-        {{ name }}
+        <a href="https://src.fedoraproject.org/rpms/{{ name }}">{{ name }}</a>
     </h3>
 
     {% if package.depended %}
@@ -101,7 +101,7 @@ permalink:  /report/
                         {% if dependency in all_packages %}
                             <em>
                         {% endif %}
-                        {{ dependency }}
+                        <a href="https://src.fedoraproject.org/rpms/{{ dependency }}">{{ dependency }}</a>
                         {% if dependency in all_packages %}
                             </em>
                         {% endif %}
