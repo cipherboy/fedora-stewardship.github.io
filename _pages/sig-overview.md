@@ -71,6 +71,7 @@ permalink:  /overview/
 | hamcrest | 1.3 | 2.2 | 492 days behind |
 | hawtjni | 1.17 | 1.17 | current |
 | httpcomponents-project | 11 | 11 | current |
+| isorelax | 0 | 0 | current |
 | jackson-annotations | 2.10.3 | 2.10.3 | current |
 | jackson-core | 2.10.3 | 2.10.3 | current |
 | jackson-databind | 2.10.3 | 2.10.3 | current |
