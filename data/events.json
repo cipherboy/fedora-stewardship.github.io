@@ -15472,5 +15472,65 @@
     "event": "released",
     "date": "2020-04-23",
     "version": "3.15.21"
+  },
+  {
+    "package": "codemodel",
+    "event": "removed",
+    "date": "2020-04-25",
+    "version": null
+  },
+  {
+    "package": "glassfish-dtd-parser",
+    "event": "removed",
+    "date": "2020-04-25",
+    "version": null
+  },
+  {
+    "package": "glassfish-fastinfoset",
+    "event": "removed",
+    "date": "2020-04-25",
+    "version": null
+  },
+  {
+    "package": "isorelax",
+    "event": "removed",
+    "date": "2020-04-25",
+    "version": null
+  },
+  {
+    "package": "istack-commons",
+    "event": "removed",
+    "date": "2020-04-25",
+    "version": null
+  },
+  {
+    "package": "relaxngcc",
+    "event": "removed",
+    "date": "2020-04-25",
+    "version": null
+  },
+  {
+    "package": "relaxngDatatype",
+    "event": "removed",
+    "date": "2020-04-25",
+    "version": null
+  },
+  {
+    "package": "stax-ex",
+    "event": "removed",
+    "date": "2020-04-25",
+    "version": null
+  },
+  {
+    "package": "xmlstreambuffer",
+    "event": "removed",
+    "date": "2020-04-25",
+    "version": null
+  },
+  {
+    "package": "xsom",
+    "event": "removed",
+    "date": "2020-04-25",
+    "version": null
   }
 ]
