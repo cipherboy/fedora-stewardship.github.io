@@ -15492,12 +15492,6 @@
     "version": null
   },
   {
-    "package": "isorelax",
-    "event": "removed",
-    "date": "2020-04-25",
-    "version": null
-  },
-  {
     "package": "istack-commons",
     "event": "removed",
     "date": "2020-04-25",
