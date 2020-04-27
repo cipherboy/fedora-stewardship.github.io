@@ -15580,5 +15580,11 @@
     "event": "released",
     "date": "2020-04-26",
     "version": "2.11.0"
+  },
+  {
+    "package": "xstream",
+    "event": "updated",
+    "date": "2020-04-27",
+    "version": "1.4.12"
   }
 ]
