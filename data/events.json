@@ -15586,5 +15586,11 @@
     "event": "updated",
     "date": "2020-04-27",
     "version": "1.4.12"
+  },
+  {
+    "package": "bea-stax",
+    "event": "removed",
+    "date": "2020-04-29",
+    "version": null
   }
 ]
