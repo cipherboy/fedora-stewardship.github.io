@@ -35,7 +35,6 @@ permalink:  /overview/
 | assertj-core | 3.8.0 | 3.15.0 | 848 days behind |
 | atinject | 1 | 1 | current |
 | bcel | 6.4.1 | 6.4.1 | current |
-| bea-stax | 1.2.0 | 1.2.0 | current |
 | beust-jcommander | 1.78 | 1.78 | current |
 | bsf | 2.4.0 | 2.4.0 | current |
 | bsh | 2.0~beta6 | 2.0~beta6 | current |
