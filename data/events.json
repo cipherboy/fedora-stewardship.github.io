@@ -15592,5 +15592,23 @@
     "event": "removed",
     "date": "2020-04-29",
     "version": null
+  },
+  {
+    "package": "felix-parent",
+    "event": "updated",
+    "date": "2020-04-29",
+    "version": "7"
+  },
+  {
+    "package": "felix-framework",
+    "event": "updated",
+    "date": "2020-04-29",
+    "version": "5.6.12"
+  },
+  {
+    "package": "felix-osgi-obr-resolver",
+    "event": "updated",
+    "date": "2020-04-29",
+    "version": "1.16.0"
   }
 ]
