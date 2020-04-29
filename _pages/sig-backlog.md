@@ -4,7 +4,7 @@ layout:     page
 permalink:  /backlog/
 ---
 
-63 of 193 out of date (33%)
+62 of 193 out of date (32%)
 
 
 
@@ -185,21 +185,14 @@ permalink:  /backlog/
 
 ## felix-framework
 - Last release: 6.0.3
-- Last updated: 5.6.0
+- Last updated: 5.6.12
 
 ### Update backlog:
 
 
-- 5.6.1 (1286 days ago)
-- 5.6.2 (1168 days ago)
-- 5.6.4 (1074 days ago)
-- 5.6.6 (1009 days ago)
-- 5.6.8 (982 days ago)
-- 5.6.10 (901 days ago)
 - 6.0.0 (666 days ago)
 - 6.0.1 (622 days ago)
 - 6.0.2 (457 days ago)
-- 5.6.12 (453 days ago)
 - 6.0.3 (370 days ago)
 
 
@@ -209,30 +202,13 @@ permalink:  /backlog/
 
 ## felix-osgi-obr-resolver
 - Last release: 2.0.0
-- Last updated: 1.8.0
+- Last updated: 1.16.0
 
 ### Update backlog:
 
 
-- 1.10.0 (1315 days ago)
-- 1.10.1 (1273 days ago)
-- 1.12.0 (1168 days ago)
-- 1.14.0 (1074 days ago)
-- 1.16.0 (782 days ago)
 - 2.0.0 (666 days ago)
 
-
-
-## felix-parent
-- Last release: 7
-- Last updated: 4
-
-### Update backlog:
-
-
-- 5 (741 days ago)
-- 6 (590 days ago)
-- 7 (14 days ago)
 
 
 

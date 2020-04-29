@@ -46,10 +46,10 @@ permalink:  /overview/
 | exec-maven-plugin | 1.6.0 | 1.6.0 | current |
 | fasterxml-oss-parent | 38 | 38 | current |
 | felix-bundlerepository | 2.0.10 | 2.0.10 | current |
-| felix-framework | 5.6.0 | 6.0.3 | 1286 days behind |
+| felix-framework | 5.6.12 | 6.0.3 | 666 days behind |
 | felix-osgi-obr | 1.0.2 | 1.0.2 | current |
-| felix-osgi-obr-resolver | 1.8.0 | 2.0.0 | 1315 days behind |
-| felix-parent | 4 | 7 | 741 days behind |
+| felix-osgi-obr-resolver | 1.16.0 | 2.0.0 | 666 days behind |
+| felix-parent | 7 | 7 | current |
 | felix-shell | 1.4.3 | 1.4.3 | current |
 | felix-utils | 1.11.4 | 1.11.4 | current |
 | fusesource-pom | 1.12 | 1.12 | current |
