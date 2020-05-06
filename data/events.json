@@ -14928,6 +14928,12 @@
     "version": "6.1"
   },
   {
+    "package": "maven-doxia",
+    "event": "released",
+    "date": "2020-02-13",
+    "version": "1.9.1"
+  },
+  {
     "package": "plexus-compiler",
     "event": "released",
     "date": "2020-02-16",
@@ -15156,6 +15162,12 @@
     "version": "2.10.3"
   },
   {
+    "package": "maven-plugin-build-helper",
+    "event": "released",
+    "date": "2020-03-03",
+    "version": "3.1.0"
+  },
+  {
     "package": "plexus-archiver",
     "event": "updated",
     "date": "2020-03-04",
@@ -15276,6 +15288,18 @@
     "version": null
   },
   {
+    "package": "jdepend",
+    "event": "released",
+    "date": "2020-03-06",
+    "version": "2.10"
+  },
+  {
+    "package": "maven-dependency-plugin",
+    "event": "released",
+    "date": "2020-03-07",
+    "version": "3.1.2"
+  },
+  {
     "package": "opentest4j",
     "event": "updated",
     "date": "2020-03-09",
@@ -15346,6 +15370,12 @@
     "event": "released",
     "date": "2020-03-19",
     "version": "3.27.0"
+  },
+  {
+    "package": "google-guice",
+    "event": "released",
+    "date": "2020-03-19",
+    "version": "4.2.3"
   },
   {
     "package": "xmlstreambuffer",
@@ -15486,6 +15516,12 @@
     "version": "2.13.2"
   },
   {
+    "package": "maven-wagon",
+    "event": "released",
+    "date": "2020-04-22",
+    "version": "3.4.0"
+  },
+  {
     "package": "javacc",
     "event": "released",
     "date": "2020-04-23",
@@ -15577,12 +15613,6 @@
   },
   {
     "package": "jackson-core",
-    "event": "released",
-    "date": "2020-04-25",
-    "version": "2.11.0"
-  },
-  {
-    "package": "maven-wagon",
     "event": "released",
     "date": "2020-04-25",
     "version": "2.11.0"
