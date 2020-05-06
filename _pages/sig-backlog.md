@@ -4,7 +4,7 @@ layout:     page
 permalink:  /backlog/
 ---
 
-69 of 193 out of date (36%)
+68 of 193 out of date (35%)
 
 
 
@@ -1270,16 +1270,6 @@ permalink:  /backlog/
 
 
 
-
-
-## snakeyaml
-- Last release: 1.26
-- Last updated: 1.25
-
-### Update backlog:
-
-
-- 1.26 (69 days ago)
 
 
 

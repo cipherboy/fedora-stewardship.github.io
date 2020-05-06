@@ -190,7 +190,7 @@ permalink:  /overview/
 | sisu | 0.3.4 | 0.3.4 | current |
 | sisu-mojos | 0.3.4 | 0.3.4 | current |
 | slf4j | 1.7.30 | 1.7.30 | current |
-| snakeyaml | 1.25 | 1.26 | 69 days behind |
+| snakeyaml | 1.26 | 1.26 | current |
 | snappy-java | 1.1.2.4 | 1.1.7.5 | 1435 days behind |
 | sonatype-oss-parent | 7 | 7 | current |
 | spec-version-maven-plugin | 1.2 | 2.1 | 619 days behind |
