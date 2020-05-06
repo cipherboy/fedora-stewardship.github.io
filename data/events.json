@@ -15510,6 +15510,12 @@
     "version": "7"
   },
   {
+    "package": "snakeyaml",
+    "event": "updated",
+    "date": "2020-04-17",
+    "version": "1.26"
+  },
+  {
     "package": "log4j",
     "event": "released",
     "date": "2020-04-21",
