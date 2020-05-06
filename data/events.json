@@ -15378,6 +15378,12 @@
     "version": "5.6.1"
   },
   {
+    "package": "aqute-bnd",
+    "event": "released",
+    "date": "2020-03-23",
+    "version": "5.0.1"
+  },
+  {
     "package": "javaparser",
     "event": "released",
     "date": "2020-03-24",
@@ -15400,6 +15406,12 @@
     "event": "released",
     "date": "2020-03-27",
     "version": "1.7.0"
+  },
+  {
+    "package": "jdependency",
+    "event": "released",
+    "date": "2020-03-30",
+    "version": "2.4.0"
   },
   {
     "package": "guava20",
@@ -15466,6 +15478,12 @@
     "event": "released",
     "date": "2020-04-15",
     "version": "7"
+  },
+  {
+    "package": "log4j",
+    "event": "released",
+    "date": "2020-04-21",
+    "version": "2.13.2"
   },
   {
     "package": "javacc",
@@ -15669,12 +15687,24 @@
     "package": "maven-verifier",
     "event": "released",
     "date": "2020-05-03",
-    "version": "1.7.1"
+    "version": "1.7.2"
   },
   {
     "package": "assertj-core",
     "event": "released",
     "date": "2020-05-05",
     "version": "3.16.0"
+  },
+  {
+    "package": "snappy-java",
+    "event": "released",
+    "date": "2020-05-05",
+    "version": "1.1.7.4"
+  },
+  {
+    "package": "snappy-java",
+    "event": "released",
+    "date": "2020-05-06",
+    "version": "1.1.7.5"
   }
 ]
