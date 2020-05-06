@@ -15666,6 +15666,12 @@
     "version": "1.8.2"
   },
   {
+    "package": "maven-verifier",
+    "event": "released",
+    "date": "2020-05-03",
+    "version": "1.7.1"
+  },
+  {
     "package": "assertj-core",
     "event": "released",
     "date": "2020-05-05",
