@@ -134,7 +134,7 @@ permalink:  /overview/
 | maven-invoker | 3.0.1 | 3.0.1 | current |
 | maven-invoker-plugin | 3.2.1 | 3.2.1 | current |
 | maven-jar-plugin | 3.2.0 | 3.2.0 | current |
-| maven-javadoc-plugin | 3.1.1 | 3.2.0 | 56 days behind |
+| maven-javadoc-plugin | 3.2.0 | 3.2.0 | current |
 | maven-osgi | 0.2.0 | 0.2.0 | current |
 | maven-parent | 34 | 34 | current |
 | maven-plugin-build-helper | 1.9.1 | 3.1.0 | 1629 days behind |

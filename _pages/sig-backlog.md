@@ -4,7 +4,7 @@ layout:     page
 permalink:  /backlog/
 ---
 
-68 of 193 out of date (35%)
+67 of 193 out of date (35%)
 
 
 
@@ -993,16 +993,6 @@ permalink:  /backlog/
 
 
 
-
-
-## maven-javadoc-plugin
-- Last release: 3.2.0
-- Last updated: 3.1.1
-
-### Update backlog:
-
-
-- 3.2.0 (56 days ago)
 
 
 
