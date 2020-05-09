@@ -5,6 +5,11 @@ permalink:  /pr-report/
 ---
 
 
+## ant
+
+- [#2: update to version 1.10.7](https://src.fedoraproject.org/rpms/ant/pull-request/2)
+
+
 ## apache-commons-vfs
 
 - [#4: update to version 2.6.0](https://src.fedoraproject.org/rpms/apache-commons-vfs/pull-request/4)
@@ -40,9 +45,19 @@ permalink:  /pr-report/
 - [#5: update to version 2.10.4](https://src.fedoraproject.org/rpms/jackson-modules-base/pull-request/5)
 
 
+## jboss-logging-tools
+
+- [#1: update to version 2.2.1](https://src.fedoraproject.org/rpms/jboss-logging-tools/pull-request/1)
+
+
 ## junit
 
-- [#1: Rebase to version 4.13](https://src.fedoraproject.org/rpms/junit/pull-request/1)
+- [#1: [WIP] Rebase to version 4.13](https://src.fedoraproject.org/rpms/junit/pull-request/1)
+
+
+## junit5
+
+- [#4: update to version 5.6.2](https://src.fedoraproject.org/rpms/junit5/pull-request/4)
 
 
 ## maven-antrun-plugin
@@ -58,4 +73,19 @@ permalink:  /pr-report/
 ## maven-enforcer
 
 - [#3: update to version 3.0.0-M3](https://src.fedoraproject.org/rpms/maven-enforcer/pull-request/3)
+
+
+## maven-plugin-build-helper
+
+- [#1: update to version 3.1.0](https://src.fedoraproject.org/rpms/maven-plugin-build-helper/pull-request/1)
+
+
+## maven-remote-resources-plugin
+
+- [#1: update to version 1.7.0](https://src.fedoraproject.org/rpms/maven-remote-resources-plugin/pull-request/1)
+
+
+## maven-shade-plugin
+
+- [#3: update to version 3.2.3](https://src.fedoraproject.org/rpms/maven-shade-plugin/pull-request/3)
 
