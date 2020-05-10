@@ -12972,6 +12972,12 @@
     "version": "4.3.0"
   },
   {
+    "package": "jakarta-annotations",
+    "event": "released",
+    "date": "2019-08-30",
+    "version": "1.3.5"
+  },
+  {
     "package": "spymemcached",
     "event": "removed",
     "date": "2019-09-01",
@@ -15342,6 +15348,12 @@
     "version": null
   },
   {
+    "package": "jaxb-dtd-parser",
+    "event": "released",
+    "date": "2020-03-17",
+    "version": "1.4.3"
+  },
+  {
     "package": "maven-parent",
     "event": "updated",
     "date": "2020-03-18",
@@ -15766,5 +15778,41 @@
     "event": "updated",
     "date": "2020-05-07",
     "version": "3.1.0"
+  },
+  {
+    "package": "jakarta-annotations",
+    "event": "adopted",
+    "date": "2020-05-10",
+    "version": null
+  },
+  {
+    "package": "jaxb-dtd-parser",
+    "event": "adopted",
+    "date": "2020-05-10",
+    "version": null
+  },
+  {
+    "package": "felix-framework",
+    "event": "removed",
+    "date": "2020-05-10",
+    "version": null
+  },
+  {
+    "package": "felix-osgi-obr-resolver",
+    "event": "removed",
+    "date": "2020-05-10",
+    "version": null
+  },
+  {
+    "package": "jakarta-annotations",
+    "event": "updated",
+    "date": "2020-05-10",
+    "version": "1.3.5"
+  },
+  {
+    "package": "jaxb-dtd-parser",
+    "event": "updated",
+    "date": "2020-05-10",
+    "version": "1.4.3"
   }
 ]
