@@ -15814,5 +15814,11 @@
     "event": "updated",
     "date": "2020-05-10",
     "version": "1.4.3"
+  },
+  {
+    "package": "ant",
+    "event": "updated",
+    "date": "2020-05-11",
+    "version": "1.10.7"
   }
 ]
