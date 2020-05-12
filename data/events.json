@@ -15780,6 +15780,12 @@
     "version": "3.1.0"
   },
   {
+    "package": "assertj-core",
+    "event": "released",
+    "date": "2020-05-08",
+    "version": "3.16.1"
+  },
+  {
     "package": "jakarta-annotations",
     "event": "adopted",
     "date": "2020-05-10",
@@ -15820,5 +15826,11 @@
     "event": "updated",
     "date": "2020-05-11",
     "version": "1.10.7"
+  },
+  {
+    "package": "javaparser",
+    "event": "released",
+    "date": "2020-05-11",
+    "version": "3.15.22"
   }
 ]
