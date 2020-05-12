@@ -5,7 +5,7 @@ permalink:  /report/
 ---
 
 <p>
-    rawhide compose: 20200509.n.0; Rendered last at: 2020-05-09T23:51:59.458401 (UTC)
+    rawhide compose: 20200511.n.0; Rendered last at: 2020-05-12T07:42:40.980204 (UTC)
 </p>
 
 <h2 id="members">
@@ -37,7 +37,7 @@ permalink:  /report/
 </ul>
 
 <h2 id="maintained-packages">
-    Maintained packages (193)
+    Maintained packages (192)
 </h2>
 
 <table>
@@ -240,21 +240,9 @@ permalink:  /report/
         <td>--</td>
     </tr>
     <tr>
-        <td>felix-framework</td>
-        <td>decathorpe</td>
-        <td>--</td>
-        <td>mizdebsk, msimacek</td>
-    </tr>
-    <tr>
         <td>felix-osgi-obr</td>
         <td>decathorpe</td>
         <td>jcapik, mizdebsk</td>
-        <td>--</td>
-    </tr>
-    <tr>
-        <td>felix-osgi-obr-resolver</td>
-        <td>decathorpe</td>
-        <td>--</td>
         <td>--</td>
     </tr>
     <tr>
@@ -297,12 +285,6 @@ permalink:  /report/
         <td>geronimo-parent-poms</td>
         <td>jjelen</td>
         <td>mizdebsk</td>
-        <td>--</td>
-    </tr>
-    <tr>
-        <td>glassfish-annotation-api</td>
-        <td>decathorpe</td>
-        <td>--</td>
         <td>--</td>
     </tr>
     <tr>
@@ -426,6 +408,12 @@ permalink:  /report/
         <td>--</td>
     </tr>
     <tr>
+        <td>jakarta-annotations</td>
+        <td>decathorpe</td>
+        <td>--</td>
+        <td>--</td>
+    </tr>
+    <tr>
         <td>jakarta-commons-httpclient</td>
         <td>decathorpe</td>
         <td>mizdebsk</td>
@@ -477,6 +465,12 @@ permalink:  /report/
         <td>javassist</td>
         <td>dmoluguw</td>
         <td>john5342, mizdebsk</td>
+        <td>--</td>
+    </tr>
+    <tr>
+        <td>jaxb-dtd-parser</td>
+        <td>decathorpe</td>
+        <td>--</td>
         <td>--</td>
     </tr>
     <tr>
@@ -1212,11 +1206,11 @@ permalink:  /report/
 </h2>
 
 
-    <p>
-        <em>
-            None
-        </em>
-    </p>
+    <ul>
+        
+            <li><a href="https://src.fedoraproject.org/rpms/jaxb-dtd-parser">jaxb-dtd-parser</a></li>
+        
+    </ul>
 
 
 <h2 id="sig-leaves">
@@ -1226,7 +1220,7 @@ permalink:  /report/
 
     <ul>
         
-            <li><a href="https://src.fedoraproject.org/rpms/felix-framework">felix-framework</a></li>
+            <li><a href="https://src.fedoraproject.org/rpms/jaxb-dtd-parser">jaxb-dtd-parser</a></li>
         
             <li><a href="https://src.fedoraproject.org/rpms/jboss-el-3.0-api">jboss-el-3.0-api</a></li>
         
@@ -8560,11 +8554,7 @@ permalink:  /report/
                     <li>
                         BuildRequired-By:
                         
-                            <em>
-                        
                         <a href="https://src.fedoraproject.org/rpms/felix-framework">felix-framework</a>
-                        
-                            </em>
                         
                     </li>
                 
@@ -8771,6 +8761,13 @@ permalink:  /report/
                         BuildRequired-By:
                         
                         <a href="https://src.fedoraproject.org/rpms/compile-command-annotations">compile-command-annotations</a>
+                        
+                    </li>
+                
+                    <li>
+                        BuildRequired-By:
+                        
+                        <a href="https://src.fedoraproject.org/rpms/icedtea-web">icedtea-web</a>
                         
                     </li>
                 
@@ -9006,86 +9003,6 @@ permalink:  /report/
 
 
 
-    <h3 id="felix-framework-deps">
-        <a href="https://src.fedoraproject.org/rpms/felix-framework">felix-framework</a>
-    </h3>
-
-    
-        <p>
-            Depended on:
-        </p>
-
-        
-
-            <h4>
-                felix-framework
-            </h4>
-
-            <ul>
-                
-                    <li>
-                        Required-By:
-                        
-                        cassandra-java-driver-tests
-                        
-                    </li>
-                
-                    <li>
-                        Required-By:
-                        
-                        jruby
-                        
-                    </li>
-                
-                    <li>
-                        Required-By:
-                        
-                        liquibase
-                        
-                    </li>
-                
-
-                
-                    <li>
-                        BuildRequired-By:
-                        
-                        <a href="https://src.fedoraproject.org/rpms/cassandra-java-driver">cassandra-java-driver</a>
-                        
-                    </li>
-                
-                    <li>
-                        BuildRequired-By:
-                        
-                        <a href="https://src.fedoraproject.org/rpms/jruby">jruby</a>
-                        
-                    </li>
-                
-                    <li>
-                        BuildRequired-By:
-                        
-                        <a href="https://src.fedoraproject.org/rpms/liquibase">liquibase</a>
-                        
-                    </li>
-                
-            </ul>
-        
-    
-
-    
-        <p>
-            Leaf packages:
-        </p>
-
-        
-            <ul>
-                <li>felix-framework-javadoc</li>
-            </ul>
-        
-
-    
-
-
-
     <h3 id="felix-osgi-obr-deps">
         <a href="https://src.fedoraproject.org/rpms/felix-osgi-obr">felix-osgi-obr</a>
     </h3>
@@ -9135,55 +9052,6 @@ permalink:  /report/
 
 
 
-    <h3 id="felix-osgi-obr-resolver-deps">
-        <a href="https://src.fedoraproject.org/rpms/felix-osgi-obr-resolver">felix-osgi-obr-resolver</a>
-    </h3>
-
-    
-        <p>
-            Depended on:
-        </p>
-
-        
-
-            <h4>
-                felix-osgi-obr-resolver
-            </h4>
-
-            <ul>
-                
-
-                
-                    <li>
-                        BuildRequired-By:
-                        
-                            <em>
-                        
-                        <a href="https://src.fedoraproject.org/rpms/felix-framework">felix-framework</a>
-                        
-                            </em>
-                        
-                    </li>
-                
-            </ul>
-        
-    
-
-    
-        <p>
-            Leaf packages:
-        </p>
-
-        
-            <ul>
-                <li>felix-osgi-obr-resolver-javadoc</li>
-            </ul>
-        
-
-    
-
-
-
     <h3 id="felix-parent-deps">
         <a href="https://src.fedoraproject.org/rpms/felix-parent">felix-parent</a>
     </h3>
@@ -9224,11 +9092,7 @@ permalink:  /report/
                     <li>
                         BuildRequired-By:
                         
-                            <em>
-                        
                         <a href="https://src.fedoraproject.org/rpms/felix-framework">felix-framework</a>
-                        
-                            </em>
                         
                     </li>
                 
@@ -9253,11 +9117,7 @@ permalink:  /report/
                     <li>
                         BuildRequired-By:
                         
-                            <em>
-                        
                         <a href="https://src.fedoraproject.org/rpms/felix-osgi-obr-resolver">felix-osgi-obr-resolver</a>
-                        
-                            </em>
                         
                     </li>
                 
@@ -9413,11 +9273,7 @@ permalink:  /report/
                     <li>
                         BuildRequired-By:
                         
-                            <em>
-                        
                         <a href="https://src.fedoraproject.org/rpms/felix-osgi-obr-resolver">felix-osgi-obr-resolver</a>
-                        
-                            </em>
                         
                     </li>
                 
@@ -9772,156 +9628,6 @@ permalink:  /report/
             </ul>
         
     
-
-    
-
-
-
-    <h3 id="glassfish-annotation-api-deps">
-        <a href="https://src.fedoraproject.org/rpms/glassfish-annotation-api">glassfish-annotation-api</a>
-    </h3>
-
-    
-        <p>
-            Depended on:
-        </p>
-
-        
-
-            <h4>
-                glassfish-annotation-api
-            </h4>
-
-            <ul>
-                
-                    <li>
-                        Required-By:
-                        
-                        eclipse-platform
-                        
-                    </li>
-                
-                    <li>
-                        Required-By:
-                        
-                            <em>
-                        
-                        glassfish-hk2-configuration
-                        
-                            </em>
-                        
-                    </li>
-                
-                    <li>
-                        Required-By:
-                        
-                            <em>
-                        
-                        glassfish-hk2-extras
-                        
-                            </em>
-                        
-                    </li>
-                
-                    <li>
-                        Required-By:
-                        
-                            <em>
-                        
-                        glassfish-hk2-locator
-                        
-                            </em>
-                        
-                    </li>
-                
-                    <li>
-                        Required-By:
-                        
-                            <em>
-                        
-                        glassfish-hk2-metadata-generator
-                        
-                            </em>
-                        
-                    </li>
-                
-                    <li>
-                        Required-By:
-                        
-                            <em>
-                        
-                        glassfish-hk2-runlevel
-                        
-                            </em>
-                        
-                    </li>
-                
-                    <li>
-                        Required-By:
-                        
-                            <em>
-                        
-                        glassfish-hk2-utils
-                        
-                            </em>
-                        
-                    </li>
-                
-
-                
-                    <li>
-                        BuildRequired-By:
-                        
-                        <a href="https://src.fedoraproject.org/rpms/bval">bval</a>
-                        
-                    </li>
-                
-                    <li>
-                        BuildRequired-By:
-                        
-                        <a href="https://src.fedoraproject.org/rpms/eclipse">eclipse</a>
-                        
-                    </li>
-                
-                    <li>
-                        BuildRequired-By:
-                        
-                            <em>
-                        
-                        <a href="https://src.fedoraproject.org/rpms/glassfish-hk2">glassfish-hk2</a>
-                        
-                            </em>
-                        
-                    </li>
-                
-                    <li>
-                        BuildRequired-By:
-                        
-                        <a href="https://src.fedoraproject.org/rpms/sisu">sisu</a>
-                        
-                    </li>
-                
-                    <li>
-                        BuildRequired-By:
-                        
-                        <a href="https://src.fedoraproject.org/rpms/uom-se">uom-se</a>
-                        
-                    </li>
-                
-            </ul>
-        
-    
-
-    
-        <p>
-            Leaf packages:
-        </p>
-
-        
-            <ul>
-                <li>glassfish-annotation-api-javadoc</li>
-            </ul>
-        
 
     
 
@@ -10929,17 +10635,6 @@ permalink:  /report/
             <ul>
                 
 
-                
-                    <li>
-                        BuildRequired-By:
-                        
-                            <em>
-                        
-                        <a href="https://src.fedoraproject.org/rpms/glassfish-annotation-api">glassfish-annotation-api</a>
-                        
-                            </em>
-                        
-                    </li>
                 
                     <li>
                         BuildRequired-By:
@@ -12172,6 +11867,13 @@ permalink:  /report/
                         BuildRequired-By:
                         
                         <a href="https://src.fedoraproject.org/rpms/eclipse-testng">eclipse-testng</a>
+                        
+                    </li>
+                
+                    <li>
+                        BuildRequired-By:
+                        
+                        <a href="https://src.fedoraproject.org/rpms/icedtea-web">icedtea-web</a>
                         
                     </li>
                 
@@ -13757,6 +13459,142 @@ permalink:  /report/
 
 
 
+    <h3 id="jakarta-annotations-deps">
+        <a href="https://src.fedoraproject.org/rpms/jakarta-annotations">jakarta-annotations</a>
+    </h3>
+
+    
+        <p>
+            Depended on:
+        </p>
+
+        
+
+            <h4>
+                jakarta-annotations
+            </h4>
+
+            <ul>
+                
+                    <li>
+                        Required-By:
+                        
+                            <em>
+                        
+                        glassfish-hk2-configuration
+                        
+                            </em>
+                        
+                    </li>
+                
+                    <li>
+                        Required-By:
+                        
+                            <em>
+                        
+                        glassfish-hk2-extras
+                        
+                            </em>
+                        
+                    </li>
+                
+                    <li>
+                        Required-By:
+                        
+                            <em>
+                        
+                        glassfish-hk2-locator
+                        
+                            </em>
+                        
+                    </li>
+                
+                    <li>
+                        Required-By:
+                        
+                            <em>
+                        
+                        glassfish-hk2-metadata-generator
+                        
+                            </em>
+                        
+                    </li>
+                
+                    <li>
+                        Required-By:
+                        
+                            <em>
+                        
+                        glassfish-hk2-runlevel
+                        
+                            </em>
+                        
+                    </li>
+                
+                    <li>
+                        Required-By:
+                        
+                            <em>
+                        
+                        glassfish-hk2-utils
+                        
+                            </em>
+                        
+                    </li>
+                
+
+                
+                    <li>
+                        BuildRequired-By:
+                        
+                        <a href="https://src.fedoraproject.org/rpms/bval">bval</a>
+                        
+                    </li>
+                
+                    <li>
+                        BuildRequired-By:
+                        
+                            <em>
+                        
+                        <a href="https://src.fedoraproject.org/rpms/glassfish-hk2">glassfish-hk2</a>
+                        
+                            </em>
+                        
+                    </li>
+                
+                    <li>
+                        BuildRequired-By:
+                        
+                        <a href="https://src.fedoraproject.org/rpms/sisu">sisu</a>
+                        
+                    </li>
+                
+                    <li>
+                        BuildRequired-By:
+                        
+                        <a href="https://src.fedoraproject.org/rpms/uom-se">uom-se</a>
+                        
+                    </li>
+                
+            </ul>
+        
+    
+
+    
+        <p>
+            Leaf packages:
+        </p>
+
+        
+            <ul>
+                <li>jakarta-annotations-javadoc</li>
+            </ul>
+        
+
+    
+
+
+
     <h3 id="jakarta-commons-httpclient-deps">
         <a href="https://src.fedoraproject.org/rpms/jakarta-commons-httpclient">jakarta-commons-httpclient</a>
     </h3>
@@ -14775,6 +14613,31 @@ permalink:  /report/
         
             <ul>
                 <li>javassist-javadoc</li>
+            </ul>
+        
+
+    
+
+
+
+    <h3 id="jaxb-dtd-parser-deps">
+        <a href="https://src.fedoraproject.org/rpms/jaxb-dtd-parser">jaxb-dtd-parser</a>
+    </h3>
+
+    
+
+    
+        <p>
+            Leaf packages:
+        </p>
+
+        
+            <ul>
+                <li>jaxb-dtd-parser</li>
+            </ul>
+        
+            <ul>
+                <li>jaxb-dtd-parser-javadoc</li>
             </ul>
         
 
@@ -17579,11 +17442,7 @@ permalink:  /report/
                     <li>
                         BuildRequired-By:
                         
-                            <em>
-                        
                         <a href="https://src.fedoraproject.org/rpms/felix-framework">felix-framework</a>
-                        
-                            </em>
                         
                     </li>
                 
@@ -17611,11 +17470,7 @@ permalink:  /report/
                     <li>
                         BuildRequired-By:
                         
-                            <em>
-                        
                         <a href="https://src.fedoraproject.org/rpms/felix-osgi-obr-resolver">felix-osgi-obr-resolver</a>
-                        
-                            </em>
                         
                     </li>
                 
@@ -19340,24 +19195,6 @@ permalink:  /report/
                     <li>
                         BuildRequired-By:
                         
-                            <em>
-                        
-                        <a href="https://src.fedoraproject.org/rpms/glassfish-annotation-api">glassfish-annotation-api</a>
-                        
-                            </em>
-                        
-                    </li>
-                
-                    <li>
-                        BuildRequired-By:
-                        
-                        <a href="https://src.fedoraproject.org/rpms/glassfish-dtd-parser">glassfish-dtd-parser</a>
-                        
-                    </li>
-                
-                    <li>
-                        BuildRequired-By:
-                        
                         <a href="https://src.fedoraproject.org/rpms/glassfish-el">glassfish-el</a>
                         
                     </li>
@@ -20029,6 +19866,13 @@ permalink:  /report/
                     </li>
                 
 
+                
+                    <li>
+                        BuildRequired-By:
+                        
+                        <a href="https://src.fedoraproject.org/rpms/icedtea-web">icedtea-web</a>
+                        
+                    </li>
                 
                     <li>
                         BuildRequired-By:
@@ -22790,6 +22634,13 @@ permalink:  /report/
                         BuildRequired-By:
                         
                         <a href="https://src.fedoraproject.org/rpms/datanucleus-maven-parent">datanucleus-maven-parent</a>
+                        
+                    </li>
+                
+                    <li>
+                        BuildRequired-By:
+                        
+                        <a href="https://src.fedoraproject.org/rpms/icedtea-web">icedtea-web</a>
                         
                     </li>
                 
@@ -25625,6 +25476,13 @@ permalink:  /report/
                     <li>
                         BuildRequired-By:
                         
+                        <a href="https://src.fedoraproject.org/rpms/icedtea-web">icedtea-web</a>
+                        
+                    </li>
+                
+                    <li>
+                        BuildRequired-By:
+                        
                         <a href="https://src.fedoraproject.org/rpms/maven-patch-plugin">maven-patch-plugin</a>
                         
                     </li>
@@ -27284,6 +27142,17 @@ permalink:  /report/
                     <li>
                         BuildRequired-By:
                         
+                            <em>
+                        
+                        <a href="https://src.fedoraproject.org/rpms/jakarta-annotations">jakarta-annotations</a>
+                        
+                            </em>
+                        
+                    </li>
+                
+                    <li>
+                        BuildRequired-By:
+                        
                         <a href="https://src.fedoraproject.org/rpms/javamail">javamail</a>
                         
                     </li>
@@ -27294,6 +27163,17 @@ permalink:  /report/
                             <em>
                         
                         <a href="https://src.fedoraproject.org/rpms/javaparser">javaparser</a>
+                        
+                            </em>
+                        
+                    </li>
+                
+                    <li>
+                        BuildRequired-By:
+                        
+                            <em>
+                        
+                        <a href="https://src.fedoraproject.org/rpms/jaxb-dtd-parser">jaxb-dtd-parser</a>
                         
                             </em>
                         
@@ -27883,11 +27763,7 @@ permalink:  /report/
                     <li>
                         BuildRequired-By:
                         
-                            <em>
-                        
                         <a href="https://src.fedoraproject.org/rpms/felix-framework">felix-framework</a>
-                        
-                            </em>
                         
                     </li>
                 
@@ -27926,11 +27802,7 @@ permalink:  /report/
                     <li>
                         BuildRequired-By:
                         
-                            <em>
-                        
                         <a href="https://src.fedoraproject.org/rpms/felix-osgi-obr-resolver">felix-osgi-obr-resolver</a>
-                        
-                            </em>
                         
                     </li>
                 
@@ -27993,17 +27865,6 @@ permalink:  /report/
                             <em>
                         
                         <a href="https://src.fedoraproject.org/rpms/geronimo-parent-poms">geronimo-parent-poms</a>
-                        
-                            </em>
-                        
-                    </li>
-                
-                    <li>
-                        BuildRequired-By:
-                        
-                            <em>
-                        
-                        <a href="https://src.fedoraproject.org/rpms/glassfish-annotation-api">glassfish-annotation-api</a>
                         
                             </em>
                         
@@ -28241,6 +28102,17 @@ permalink:  /report/
                         
                             <em>
                         
+                        <a href="https://src.fedoraproject.org/rpms/jakarta-annotations">jakarta-annotations</a>
+                        
+                            </em>
+                        
+                    </li>
+                
+                    <li>
+                        BuildRequired-By:
+                        
+                            <em>
+                        
                         <a href="https://src.fedoraproject.org/rpms/jansi">jansi</a>
                         
                             </em>
@@ -28287,6 +28159,17 @@ permalink:  /report/
                         BuildRequired-By:
                         
                         <a href="https://src.fedoraproject.org/rpms/javolution">javolution</a>
+                        
+                    </li>
+                
+                    <li>
+                        BuildRequired-By:
+                        
+                            <em>
+                        
+                        <a href="https://src.fedoraproject.org/rpms/jaxb-dtd-parser">jaxb-dtd-parser</a>
+                        
+                            </em>
                         
                     </li>
                 
@@ -30619,17 +30502,6 @@ permalink:  /report/
                     <li>
                         BuildRequired-By:
                         
-                            <em>
-                        
-                        <a href="https://src.fedoraproject.org/rpms/glassfish-annotation-api">glassfish-annotation-api</a>
-                        
-                            </em>
-                        
-                    </li>
-                
-                    <li>
-                        BuildRequired-By:
-                        
                         <a href="https://src.fedoraproject.org/rpms/glassfish-el">glassfish-el</a>
                         
                     </li>
@@ -32296,6 +32168,13 @@ permalink:  /report/
                     <li>
                         BuildRequired-By:
                         
+                        <a href="https://src.fedoraproject.org/rpms/icedtea-web">icedtea-web</a>
+                        
+                    </li>
+                
+                    <li>
+                        BuildRequired-By:
+                        
                         <a href="https://src.fedoraproject.org/rpms/jacoco">jacoco</a>
                         
                     </li>
@@ -33201,17 +33080,6 @@ permalink:  /report/
                         
                             <em>
                         
-                        <a href="https://src.fedoraproject.org/rpms/glassfish-annotation-api">glassfish-annotation-api</a>
-                        
-                            </em>
-                        
-                    </li>
-                
-                    <li>
-                        BuildRequired-By:
-                        
-                            <em>
-                        
                         <a href="https://src.fedoraproject.org/rpms/glassfish-jsp-api">glassfish-jsp-api</a>
                         
                             </em>
@@ -33239,6 +33107,13 @@ permalink:  /report/
                     <li>
                         BuildRequired-By:
                         
+                        <a href="https://src.fedoraproject.org/rpms/icedtea-web">icedtea-web</a>
+                        
+                    </li>
+                
+                    <li>
+                        BuildRequired-By:
+                        
                         <a href="https://src.fedoraproject.org/rpms/jacoco">jacoco</a>
                         
                     </li>
@@ -33247,6 +33122,17 @@ permalink:  /report/
                         BuildRequired-By:
                         
                         <a href="https://src.fedoraproject.org/rpms/jaf">jaf</a>
+                        
+                    </li>
+                
+                    <li>
+                        BuildRequired-By:
+                        
+                            <em>
+                        
+                        <a href="https://src.fedoraproject.org/rpms/jakarta-annotations">jakarta-annotations</a>
+                        
+                            </em>
                         
                     </li>
                 
@@ -35442,11 +35328,7 @@ permalink:  /report/
                     <li>
                         Required-By:
                         
-                            <em>
-                        
                         felix-osgi-obr-resolver
-                        
-                            </em>
                         
                     </li>
                 
@@ -35574,11 +35456,7 @@ permalink:  /report/
                     <li>
                         BuildRequired-By:
                         
-                            <em>
-                        
                         <a href="https://src.fedoraproject.org/rpms/felix-osgi-obr-resolver">felix-osgi-obr-resolver</a>
-                        
-                            </em>
                         
                     </li>
                 
@@ -44650,7 +44528,7 @@ permalink:  /report/
                         
                             <em>
                         
-                        <a href="https://src.fedoraproject.org/rpms/glassfish-annotation-api">glassfish-annotation-api</a>
+                        <a href="https://src.fedoraproject.org/rpms/glassfish-jax-rs-api">glassfish-jax-rs-api</a>
                         
                             </em>
                         
@@ -44661,7 +44539,7 @@ permalink:  /report/
                         
                             <em>
                         
-                        <a href="https://src.fedoraproject.org/rpms/glassfish-jax-rs-api">glassfish-jax-rs-api</a>
+                        <a href="https://src.fedoraproject.org/rpms/jakarta-annotations">jakarta-annotations</a>
                         
                             </em>
                         

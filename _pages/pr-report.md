@@ -5,14 +5,14 @@ permalink:  /pr-report/
 ---
 
 
-## ant
-
-- [#2: update to version 1.10.7](https://src.fedoraproject.org/rpms/ant/pull-request/2)
-
-
 ## apache-commons-vfs
 
 - [#4: update to version 2.6.0](https://src.fedoraproject.org/rpms/apache-commons-vfs/pull-request/4)
+
+
+## glassfish-jaxb
+
+- [#3: enable non-minimal build again](https://src.fedoraproject.org/rpms/glassfish-jaxb/pull-request/3)
 
 
 ## google-guice
@@ -85,7 +85,27 @@ permalink:  /pr-report/
 - [#1: update to version 1.7.0](https://src.fedoraproject.org/rpms/maven-remote-resources-plugin/pull-request/1)
 
 
+## maven-resolver
+
+- [#5: update to version 1.4.2](https://src.fedoraproject.org/rpms/maven-resolver/pull-request/5)
+
+
 ## maven-shade-plugin
 
 - [#3: update to version 3.2.3](https://src.fedoraproject.org/rpms/maven-shade-plugin/pull-request/3)
+
+
+## maven-verifier
+
+- [#1: update to version 1.7.2](https://src.fedoraproject.org/rpms/maven-verifier/pull-request/1)
+
+
+## maven-wagon
+
+- [#5: update to version 3.4.0](https://src.fedoraproject.org/rpms/maven-wagon/pull-request/5)
+
+
+## woodstox-core
+
+- [#7: update to version 6.2.0](https://src.fedoraproject.org/rpms/woodstox-core/pull-request/7)
 
