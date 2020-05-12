@@ -8808,12 +8808,6 @@
     "version": "3.0.0~M3"
   },
   {
-    "package": "hamcrest",
-    "event": "released",
-    "date": "2018-12-20",
-    "version": "2.1"
-  },
-  {
     "package": "plexus-utils",
     "event": "released",
     "date": "2018-12-21",
@@ -13666,12 +13660,6 @@
     "event": "released",
     "date": "2019-10-16",
     "version": "4.2.0"
-  },
-  {
-    "package": "hamcrest",
-    "event": "released",
-    "date": "2019-10-16",
-    "version": "2.2"
   },
   {
     "package": "jboss-logging-tools",
