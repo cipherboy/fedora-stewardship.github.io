@@ -4,7 +4,7 @@ layout:     page
 permalink:  /backlog/
 ---
 
-61 of 193 out of date (32%)
+61 of 192 out of date (32%)
 
 
 
@@ -79,7 +79,7 @@ permalink:  /backlog/
 
 
 ## assertj-core
-- Last release: 3.16.0
+- Last release: 3.16.1
 - Last updated: 3.8.0
 
 ### Update backlog:
@@ -96,6 +96,7 @@ permalink:  /backlog/
 - 3.14.0 (198 days ago)
 - 3.15.0 (105 days ago)
 - 3.16.0 (7 days ago)
+- 3.16.1 (4 days ago)
 
 
 
@@ -430,7 +431,7 @@ permalink:  /backlog/
 
 
 ## javaparser
-- Last release: 3.15.21
+- Last release: 3.15.22
 - Last updated: 3.3.5
 
 ### Update backlog:
@@ -546,6 +547,7 @@ permalink:  /backlog/
 - 3.15.17 (49 days ago)
 - 3.15.18 (36 days ago)
 - 3.15.21 (19 days ago)
+- 3.15.22 (1 days ago)
 
 
 

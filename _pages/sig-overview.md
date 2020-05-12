@@ -32,7 +32,7 @@ permalink:  /overview/
 | apiguardian | 1.1.0 | 1.1.0 | current |
 | aqute-bnd | 3.5.0 | 5.0.1 | 732 days behind |
 | args4j | 2.33 | 2.33 | current |
-| assertj-core | 3.8.0 | 3.16.0 | 861 days behind |
+| assertj-core | 3.8.0 | 3.16.1 | 861 days behind |
 | atinject | 1 | 1 | current |
 | bcel | 6.4.1 | 6.4.1 | current |
 | beust-jcommander | 1.78 | 1.78 | current |
@@ -83,9 +83,8 @@ permalink:  /overview/
 | java_cup | 0.11~beta | 0.11~beta | current |
 | javacc | 7.0.4 | 7.0.6 | 205 days behind |
 | javacc-maven-plugin | 2.6 | 2.6 | current |
-| javaparser | 3.3.5 | 3.15.21 | 968 days behind |
+| javaparser | 3.3.5 | 3.15.22 | 968 days behind |
 | javassist | 3.21.0 | 3.27.0 | 945 days behind |
-| jaxb-dtd-parser | 1.4.3 | 1.4.3 | current |
 | jaxen | 1.2.0 | 1.2.0 | current |
 | jboss-annotations-1.2-api | 1.0.2 | 1.0.2 | current |
 | jboss-el-2.2-api | 1.0.5 | 1.0.6 | 1504 days behind |
