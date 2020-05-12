@@ -25,9 +25,14 @@ def main():
         "--force", "-f", action="store_const", const=True, default=False,
         help="force regenerating even if the compose value has not changed",
     )
+    parser.add_argument(
+        "--koji", "-k", action="store_const", const=True, default=False,
+        help="use data from koji buildroot instead of the rawhide repos",
+    )
 
     args = vars(parser.parse_args())
     force = args["force"]
+    koji = args["koji"]
 
     cur_dir = os.getcwd()
     cur_com = read_state()
@@ -44,12 +49,17 @@ def main():
             print(ret.stdout.decode())
             return 1
 
-        if compose == cur_com and not force:
+        if compose == cur_com and not force and not koji:
             print("Data has already been generated for this compose.")
             print("Use the '--force' switch to override this check.")
             return 0
 
-        subprocess.run(["./sig_report.py", compose]).check_returncode()
+        if not koji:
+            subprocess.run(["./sig_report.py", compose]).check_returncode()
+        else:
+            timestamp = datetime.datetime.utcnow().strftime("%Y%m%d-%H%M%S")
+            subprocess.run(["./sig_report.py", "--koji", f"{compose}-koji-{timestamp}"])
+
         subprocess.run(["./pr_report.py"]).check_returncode()
         subprocess.run(["./sig_backlog.py"]).check_returncode()
 
