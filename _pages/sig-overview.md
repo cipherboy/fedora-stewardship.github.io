@@ -65,7 +65,7 @@ permalink:  /overview/
 | google-gson | 2.8.6 | 2.8.6 | current |
 | google-guice | 4.2.2 | 4.2.3 | 54 days behind |
 | guava | 25.0 | 29.0 | 720 days behind |
-| hamcrest | 1.3 | 2.2 | 509 days behind |
+| hamcrest | 1.3 | 1.3 | current |
 | hawtjni | 1.17 | 1.17 | current |
 | httpcomponents-project | 11 | 11 | current |
 | isorelax | 0 | 0 | current |

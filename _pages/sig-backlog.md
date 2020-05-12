@@ -4,7 +4,7 @@ layout:     page
 permalink:  /backlog/
 ---
 
-61 of 192 out of date (32%)
+60 of 192 out of date (31%)
 
 
 
@@ -280,17 +280,6 @@ permalink:  /backlog/
 - 29.0 (29 days ago)
 
 
-
-
-## hamcrest
-- Last release: 2.2
-- Last updated: 1.3
-
-### Update backlog:
-
-
-- 2.1 (509 days ago)
-- 2.2 (209 days ago)
 
 
 
